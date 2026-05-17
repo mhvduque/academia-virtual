@@ -12,6 +12,7 @@ const CURRICULUM = [
     chapters: [
       { id: 'A1', title: 'Principles of Surgical Oncology', level: 'PGY1-2', readingTime: 40 },
       { id: 'A2', title: 'Colorectal Cancer', level: 'PGY2-3', readingTime: 45 },
+      { id: 'A2ES', title: 'Cáncer Colorrectal (ES — pipeline test)', level: 'PGY2-3', readingTime: 39 },
       { id: 'A3', title: 'Gastric Cancer', level: 'PGY2-3', readingTime: 38 },
       { id: 'A4', title: 'Hepatopancreatic-Biliary Surgery', level: 'PGY3-4', readingTime: 50 },
       { id: 'A5', title: 'Breast Surgery & Melanoma', level: 'PGY2-3', readingTime: 95 },
@@ -84,7 +85,7 @@ const ALL_CHAPTERS = CURRICULUM.flatMap(b => b.chapters);
 
 /* ── Chapter filename map (shared) ─────────────────────────── */
 const CHAPTER_FILES = {
-  A1: 'a1_oncology_principles', A2: 'a2_colorectal', A3: 'a3_gastric',
+  A1: 'a1_oncology_principles', A2: 'a2_colorectal', A2ES: 'a2_colorectal_es', A3: 'a3_gastric',
   A4: 'a4_hpb', A5: 'a5_breast', A6: 'a6_sarcoma_peritoneal', A7: 'a7_endocrine',
   B1: 'b1_emergency_surgery', B2: 'b2_hernia', B3: 'b3_bariatric',
   D1: 'd1_biliary', D2: 'd2_diverticulitis', D3: 'd3_ibd',
