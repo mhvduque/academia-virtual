@@ -1,0 +1,1599 @@
+{
+  "id": "A2",
+  "title": "Cáncer Colorrectal",
+  "subtitle": "Diagnóstico, estadificación y tratamiento multidisciplinar",
+  "block": "A",
+  "block_name": "Oncología Quirúrgica",
+  "level": "PGY2-3",
+  "reading_time_min": 39,
+  "guidelines_version": "NCCN v2.2025 · ESMO Living Guideline 2024",
+  "textbook_refs": [
+    "Townsend: Sabiston Textbook of Surgery, 21st ed., Chapter 52",
+    "Wolff BG et al. The ASCRS Textbook of Colon and Rectal Surgery, 3rd ed.",
+    "NCCN Clinical Practice Guidelines in Oncology: Colon Cancer v2.2025",
+    "NCCN Clinical Practice Guidelines in Oncology: Rectal Cancer v2.2025"
+  ],
+  "learning_objectives": [
+    "Aplicar la estadificación TNM (AJCC 8.ª edición) al cáncer de colon y recto",
+    "Seleccionar el esquema de quimioterapia adyuvante según estadio y perfil molecular",
+    "Interpretar el impacto pronóstico y terapéutico de RAS, BRAF V600E, MSI-H y HER2",
+    "Describir las estrategias neoadyuvantes en cáncer de recto de riesgo intermedio y alto",
+    "Identificar los principios oncológicos de la resección curativa (márgenes, extirpación ganglionar)",
+    "Reconocer las indicaciones de inmunoterapia en primera línea para mCRC MSI-H/dMMR",
+    "Discutir las controversias vigentes: duración de adyuvancia, watch & wait, resección hepática"
+  ],
+  "sections": [
+    {
+      "id": "A2-S1",
+      "title": "Caso clínico inicial y epidemiología",
+      "blocks": [
+        {
+          "type": "case_opener",
+          "title": "A 58-Year-Old with Fatigue, Iron-Deficiency Anaemia, and Obstruction",
+          "scenario": "A 58-year-old man presents to his primary care physician with a 4-month history of progressive fatigue and dyspnoea on exertion. Labs reveal haemoglobin 8.2 g/dL with microcytic, hypochromic indices and ferritin of 6 ng/mL. On further questioning, he endorses intermittent left lower quadrant cramping and a perceived change in stool calibre over the same period. He has no prior colonoscopy, no family history of CRC, and is otherwise without significant medical history. Colonoscopy demonstrates a near-obstructing, ulcerated mass in the sigmoid colon. CT chest/abdomen/pelvis shows no distant metastases but reveals three enlarged mesenteric lymph nodes. Final pathology after sigmoid colectomy: moderately differentiated adenocarcinoma, T3N2aM0 — AJCC 8th edition Stage IIIC. Tumour is sent for reflex MMR immunohistochemistry and BRAF V600E testing.",
+          "learning_hook": "Why does this patient's MSI/MMR status fundamentally change both the adjuvant treatment decision and the germline counselling pathway — and what do the perioperative data say about prophylactic HIPEC in patients like him?"
+        },
+        {
+          "type": "text",
+          "title": "Global Incidence and Mortality Trends",
+          "content": "Colorectal cancer (CRC) is the third most commonly diagnosed malignancy and the second leading cause of cancer-related death worldwide, with approximately 1.9 million new cases and 935,000 deaths reported annually. Incidence rates have declined steadily in adults over 50 in high-income countries, attributable largely to the uptake of screening colonoscopy and polypectomy — an intervention that interrupts the adenoma-to-carcinoma sequence. Paradoxically, incidence among adults younger than 50 has risen approximately 1–2% per year over the past two decades in the United States and several European nations, a trend not yet fully explained but implicating dietary patterns, obesity, and alterations in the gut microbiome. Stage III disease — regional lymph node involvement without distant metastases — accounts for roughly 25–30% of newly diagnosed CRC cases, and this cohort carries a 5-year overall survival of approximately 40–80% depending on T and N substage."
+        },
+        {
+          "type": "table",
+          "title": "AJCC 8th Edition Stage III Substaging and Approximate 5-Year Survival",
+          "headers": [
+            "Substage",
+            "T Category",
+            "N Category",
+            "M Category",
+            "Approximate 5-Year OS"
+          ],
+          "rows": [
+            [
+              "IIIA",
+              "T1–T2",
+              "N1 (1–3 nodes)",
+              "M0",
+              "~70–80%"
+            ],
+            [
+              "IIIA",
+              "T1",
+              "N2a (4–6 nodes)",
+              "M0",
+              "~70–80%"
+            ],
+            [
+              "IIIB",
+              "T3–T4a",
+              "N1",
+              "M0",
+              "~50–65%"
+            ],
+            [
+              "IIIB",
+              "T2–T3",
+              "N2a (4–6 nodes)",
+              "M0",
+              "~50–65%"
+            ],
+            [
+              "IIIB",
+              "T1–T2",
+              "N2b (≥7 nodes)",
+              "M0",
+              "~50–65%"
+            ],
+            [
+              "IIIC",
+              "T4a",
+              "N2a (4–6 nodes)",
+              "M0",
+              "~40–50%"
+            ],
+            [
+              "IIIC",
+              "T3–T4a",
+              "N2b (≥7 nodes)",
+              "M0",
+              "~40–50%"
+            ],
+            [
+              "IIIC",
+              "T4b",
+              "N1–N2",
+              "M0",
+              "~25–40%"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Hereditary, Familial, and Sporadic Risk Pathways",
+          "content": "Approximately 75% of CRC cases are sporadic, arising in individuals without a recognised hereditary syndrome or strong family history, with cumulative environmental exposures — processed red meat intake, sedentary lifestyle, obesity, type 2 diabetes, chronic alcohol use, and tobacco — driving adenoma formation and malignant progression. Lynch syndrome (hereditary non-polyposis CRC), caused by germline pathogenic variants in MMR genes (MLH1, MSH2, MSH6, PMS2), accounts for 3–5% of all CRC and is the most clinically actionable hereditary syndrome because of its implications for surveillance, extracolonic cancer risk, and — critically — adjuvant treatment selection. Familial adenomatous polyposis (FAP), driven by germline APC mutations, accounts for less than 1% of CRC but carries near-100% lifetime penetrance without prophylactic colectomy. For the practising surgeon, the diagnostic index of suspicion for Lynch syndrome must be highest in patients presenting under age 50, with right-sided tumours, MSI-H pathology, or a personal/family history of Lynch-associated cancers (endometrial, ovarian, urinary tract, small bowel)."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Do Not Miss Lynch Syndrome Reflexively",
+          "content": "A resident orders MMR IHC on a 58-year-old's sigmoid tumour, finds MSI-H / MLH1-loss, and immediately refers for germline Lynch syndrome counselling — but the concurrent BRAF V600E mutation is not noticed. In MSI-H CRC where BRAF V600E is also present, the mechanism is almost always sporadic MLH1 promoter hypermethylation (CIMP-high), not Lynch syndrome germline mutation. Reflexive MLH1 promoter methylation testing must be ordered first; if methylation is confirmed, germline testing is not indicated and unnecessary patient anxiety is avoided. Lynch syndrome workup should proceed only when BRAF is wild-type or methylation is absent."
+        },
+        {
+          "type": "text",
+          "title": "Screening, Polyp Biology, and the Adenoma-Carcinoma Sequence",
+          "content": "The foundational rationale for CRC screening rests on the adenoma-carcinoma sequence: conventional adenomas (tubular, tubulovillous, villous) accumulate stepwise mutations over 10–15 years, while serrated lesions (sessile serrated adenomas/polyps) progress more rapidly via a BRAF V600E–driven, CIMP-associated epigenetic pathway. Colonoscopy with polypectomy reduces CRC incidence and mortality by interrupting this sequence before invasive transformation. High-quality colonoscopy — defined by an adenoma detection rate ≥25% in average-risk populations — is the benchmark quality metric because each 1% increase in ADR is associated with a measurable reduction in post-colonoscopy interval cancer. Faecal immunochemical testing (FIT) and multi-target stool DNA testing are acceptable non-invasive screening alternatives in average-risk patients but require colonoscopic follow-up for any positive result. For Lynch syndrome carriers, annual or biennial colonoscopy beginning at age 20–25 (or 2–5 years before the earliest affected relative) is the standard surveillance interval."
+        },
+        {
+          "type": "callout",
+          "variant": "pearl",
+          "title": "Iron-Deficiency Anaemia in a Man Over 50 Is a Colon Cancer Until Proven Otherwise",
+          "content": "In the absence of an obvious bleeding source (e.g., heavy menstrual loss), unexplained iron-deficiency anaemia in any man or any post-menopausal woman over 50 mandates bidirectional endoscopic evaluation. Right-sided colon cancers classically present with occult blood loss and anaemia rather than obstructive symptoms because the right colon lumen is wide and stool is liquid — a tumour can reach significant size before obstruction occurs. Missing this presentation by attributing anaemia to dietary causes or treating empirically with iron alone is a preventable diagnostic delay."
+        },
+        {
+          "type": "key_points",
+          "points": [
+            "Stage III CRC (T any, N1–N2, M0) spans substages IIIA–IIIC with 5-year OS ranging from ~25% to ~80%; substage guides prognostic counselling and adjuvant chemotherapy duration decisions.",
+            "Lynch syndrome accounts for 3–5% of all CRC; reflex MMR immunohistochemistry or MSI testing on all newly diagnosed CRC is recommended to identify candidates for germline counselling and to guide adjuvant therapy.",
+            "BRAF V600E co-occurring with MSI-H/MLH1 loss strongly suggests sporadic, CIMP-high CRC from MLH1 promoter methylation — order reflexive methylation testing before initiating germline workup.",
+            "The rise in CRC incidence among adults under 50 has lowered the threshold for investigation of lower GI symptoms in younger patients; age alone should not be used to defer endoscopic evaluation.",
+            "Right-sided tumours are enriched for MSI-H and BRAF V600E; awareness of this molecular geography informs both prognosis and downstream metastatic treatment planning even at Stage III diagnosis.",
+            "Adequate lymph node harvest (≥12 nodes) at the index oncologic resection is a non-negotiable quality metric — failure to achieve this compromises staging accuracy and may lead to understaging and undertreated disease."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2-S2",
+      "title": "Anatomía quirúrgica y embriología",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Anatomía quirúrgica y embriología",
+          "content": "El colon y el recto derivan del intestino medio y posterior, separados embriológicamente por el punto de unión entre los territorios de la arteria mesentérica superior (AMS) y la arteria mesentérica inferior (AMI). Esta frontera, localizada en la unión del tercio proximal con el tercio medio del colon transverso, determina tanto los pedículos vasculares de resección como los patrones de drenaje linfático. La comprensión de estos planos embriológicos es el fundamento de la resección oncológica con margen de mesocolon completo (CME) y de la escisión total del mesorrecto (TME)."
+        },
+        {
+          "type": "text",
+          "title": "Planos fasciales: la clave de la resección oncológica",
+          "content": "La fascia de Toldt representa la fusión del mesocolon posterior con el peritoneo parietal retroperitoneal durante la rotación intestinal fetal. Disecar en este plano avascular — inmediatamente anterior a la fascia de Gerota y a los uréteres — permite la movilización del colon sin invadir el mesocolon ni fragmentarlo. En el recto, el plano análogo es el plano areolar perirrectal, delimitado por la fascia mesorrectal (visceral) y la fascia presacra (parietal). La TME requiere disección precisa dentro de este plano para garantizar un margen circunferencial (CRM) libre de tumor. La violación de la fascia mesorrectal durante la resección es el predictor independiente más fuerte de recidiva local en cáncer de recto."
+        },
+        {
+          "type": "callout",
+          "variant": "pearl",
+          "title": "El plano de Toldt no se 'busca' — se reconoce",
+          "content": "El plano de Toldt correcto es brillante, blanquecino y completamente avascular. Si hay sangrado, o si se visualizan fibras musculares o la grasa perirrenal, el plano es incorrecto. Redirigir la disección medialmente antes de continuar."
+        },
+        {
+          "type": "table",
+          "title": "Pedículos vasculares por segmento colónico: relevancia oncológica",
+          "headers": [
+            "Segmento",
+            "Arteria principal",
+            "Origen",
+            "Ligadura oncológica",
+            "Estructura en riesgo"
+          ],
+          "rows": [
+            [
+              "Ciego / colon derecho",
+              "Arteria ileocólica (AIC)",
+              "AMS",
+              "Alta ligadura en origen AMS",
+              "Duodeno (D3), uréter derecho"
+            ],
+            [
+              "Colon transverso derecho",
+              "Arteria cólica derecha (ACD)",
+              "AMS (variable; puede ser rama de AIC o ausente)",
+              "Ligadura en origen AMS si presente",
+              "Vena mesentérica superior"
+            ],
+            [
+              "Ángulo hepático / transverso proximal",
+              "Arteria cólica media (ACM) — rama derecha",
+              "AMS",
+              "Ligadura central en tronco ACM para hemicolectomía derecha extendida",
+              "Vena mesentérica superior"
+            ],
+            [
+              "Colon transverso distal / ángulo esplénico",
+              "Arteria cólica media (ACM) — rama izquierda",
+              "AMS",
+              "Ligadura central ACM para colectomía transversa",
+              "Bazo, páncreas distal"
+            ],
+            [
+              "Colon descendente",
+              "Arteria cólica izquierda (ACI)",
+              "AMI",
+              "Preservar o ligar según nivel de ligadura AMI",
+              "Uréter izquierdo"
+            ],
+            [
+              "Colon sigmoide",
+              "Arterias sigmoideas (2–4 ramas)",
+              "AMI",
+              "Ligadura individual en origen AMI",
+              "Uréter izquierdo, nervios hipogástricos"
+            ],
+            [
+              "Recto superior",
+              "Arteria rectal superior (ARS)",
+              "AMI",
+              "Alta ligadura AMI (± preservación ACI)",
+              "Plexo hipogástrico superior"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Alta ligadura de AMI: riesgo de isquemia del colon izquierdo residual",
+          "content": "Cuando se realiza alta ligadura de la AMI en resecciones rectales, la vascularización del colon izquierdo depende exclusivamente del arco de Riolano y la arteria marginal de Drummond. Si la arteria cólica media tiene un territorio reducido o la arcada marginal es incompleta — variante presente en ~5% de pacientes — el extremo proximal del colon descendente puede quedar isquémico tras la anastomosis. Evaluar siempre la perfusión del cabo proximal antes de confeccionar la anastomosis; considerar fluorescencia con indocianina (ICG) en casos dudosos."
+        },
+        {
+          "type": "text",
+          "title": "Drenaje linfático y ganglios de resección mínima (≥12 ganglios)",
+          "content": "El drenaje linfático del colon sigue el trayecto vascular en tres niveles: epicólico (pared colónica), paracólico (a lo largo de la arteria marginal), intermedio (sobre los pedículos principales) y apical (en el origen de la AMS o AMI). La escisión mesocólica completa (CME) con ligadura vascular central garantiza la resección en bloque de los ganglios del nivel intermedio y apical, que son los que con mayor frecuencia albergan metástasis en estadio III. El estándar NCCN/ESMO exige la identificación de ≥12 ganglios linfáticos en la pieza quirúrgica para una estadificación fiable; la cifra insuficiente obliga a considerar el estadio como pN indeterminado y puede llevar a subestadificación del 20–30% de los casos."
+        },
+        {
+          "type": "table",
+          "title": "Límites embriológicos y fasciales: implicaciones intraoperatorias",
+          "headers": [
+            "Estructura",
+            "Origen embriológico",
+            "Plano de disección correcto",
+            "Estructura protegida en plano correcto"
+          ],
+          "rows": [
+            [
+              "Fascia de Toldt (colon derecho e izquierdo)",
+              "Fusión mesocolon–peritoneo parietal (10ª semana)",
+              "Anterior a fascia de Gerota",
+              "Uréter, vasos gonadales, riñón"
+            ],
+            [
+              "Mesorrecto (fascia mesorrectal visceral)",
+              "Mesenterio dorsal del intestino posterior",
+              "Plano areolar perirrectal (TME)",
+              "Nervios hipogástricos, plexo pélvico, vasos ilíacos"
+            ],
+            [
+              "Fascia de Denonvilliers",
+              "Fusión de capas peritoneales del fondo de saco de Douglas",
+              "Anterior al recto en resecciones anteriores bajas",
+              "Vesículas seminales, próstata / vagina"
+            ],
+            [
+              "Fascia presacra (fascia de Waldeyer)",
+              "Fascia parietal pélvica posterior",
+              "Posterior al mesorrecto en TME",
+              "Plexo venoso presacro (hemorragia catastrófica si se viola)"
+            ],
+            [
+              "Ángulo esplénico (punto de transición AMS–AMI)",
+              "Unión intestino medio–posterior",
+              "Movilización secuencial: ligamento esplenocólico → Toldt lateral → medial",
+              "Bazo, cola del páncreas, vena mesentérica inferior"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "clinical",
+          "title": "Identificación del nervio hipogástrico en cirugía rectal",
+          "content": "Los nervios hipogástricos discurren sobre la fascia presacra en posición posterolateral al recto, visibles como dos cordones blanquecinos a 1–2 cm de la línea media. Se identifican mejor durante la disección posterior, inmediatamente después de la ligadura de la arteria rectal superior. Una disección demasiado lateral en este nivel — o la tracción excesiva sobre el recto — es la causa más frecuente de disfunción sexual y vesical postoperatoria en hombres jóvenes sometidos a TME. La visión directa y el uso de tracción controlada (no avulsión) son los principios protectores clave."
+        }
+      ]
+    },
+    {
+      "id": "A2-S3",
+      "title": "Diagnóstico y estadificación",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Diagnóstico y estadificación",
+          "content": "El diagnóstico de cáncer colorrectal (CCR) en estadio III requiere un algoritmo de estadificación estandarizado que integra histología, imagen multimodal y biomarcadores. La colonoscopia completa con biopsia es el estudio inicial obligatorio: confirma la histología, localiza el tumor con precisión y descarta lesiones sincrónicas, las cuales ocurren en 3–5% de los casos. Una colonoscopia incompleta por obstrucción luminal debe ser completada postoperatoriamente, idealmente dentro de los 3–6 meses tras la resección. El antígeno carcinoembrionario (CEA) preoperatorio tiene valor pronóstico independiente y sirve como línea de base para la vigilancia oncológica; valores > 5 ng/mL se asocian con peor pronóstico incluso en tumores N+ resecables."
+        },
+        {
+          "type": "text",
+          "title": "Imagen de estadificación: protocolo y selección de modalidad",
+          "content": "La tomografía computarizada (TC) de tórax, abdomen y pelvis con contraste intravenoso es el pilar de la estadificación sistémica en CCR de colon. Identifica adenopatías regionales, enfermedad a distancia y compromiso de órganos adyacentes. Para el cáncer de recto, la resonancia magnética (RM) pélvica de alta resolución es el estudio de elección para la estadificación locorregional: define con precisión la distancia al margen circunferencial de resección (CRM), la invasión de la fascia mesorrectal, la extensión extramural venosa (EMVI) y el nivel de compromiso del esfínter. La tomografía por emisión de positrones (PET-TC) no está indicada de rutina en el estadio III operable, pero se reserva para casos con hallazgos indeterminados en TC, CEA elevado con imagen convencional negativa, o recurrencia sospechada en la vigilancia."
+        },
+        {
+          "type": "table",
+          "title": "Criterios de riesgo por RM en cáncer de recto — guía para decisión neoadyuvante",
+          "headers": [
+            "Parámetro RM",
+            "Hallazgo de bajo riesgo",
+            "Hallazgo de riesgo intermedio/alto"
+          ],
+          "rows": [
+            [
+              "CRM (margen circunferencial)",
+              "≥ 2 mm libre de tumor",
+              "< 1 mm o afectado (CRM+)"
+            ],
+            [
+              "EMVI (invasión venosa extramural)",
+              "Ausente",
+              "Presente (asociado a metástasis a distancia)"
+            ],
+            [
+              "Nivel del tumor",
+              "Recto superior (> 10 cm del margen anal)",
+              "Recto medio/inferior (< 10 cm)"
+            ],
+            [
+              "Extensión T",
+              "cT1-T2 o cT3 con < 5 mm de extensión extramural",
+              "cT3 con ≥ 5 mm extramural o cT4"
+            ],
+            [
+              "Compromiso ganglionar",
+              "N0 o N1 con criterios benignos",
+              "N2 o ganglios con borde irregular / señal heterogénea"
+            ],
+            [
+              "Invasión del esfínter",
+              "Ausente",
+              "Esfínter interno o externo comprometido"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "content": "Error frecuente: Estadificar un cáncer de recto medio con TC pélvica sola. La TC tiene sensibilidad limitada para definir el CRM y la EMVI — dos variables que determinan si el paciente recibirá neoadyuvancia y si es candidato a cirugía de preservación de esfínter. Todo cáncer de recto clínicamente estadio II–III debe tener RM pélvica dedicada antes de cualquier decisión terapéutica."
+        },
+        {
+          "type": "table",
+          "title": "Estadificación TNM AJCC 8ª edición — Estadio III CCR",
+          "headers": [
+            "Estadio",
+            "T",
+            "N",
+            "M",
+            "Comentario clínico"
+          ],
+          "rows": [
+            [
+              "IIIA",
+              "T1–T2",
+              "N1 (1–3 ganglios)",
+              "M0",
+              "Mejor pronóstico dentro del estadio III; candidato a 3 meses CAPOX (IDEA)"
+            ],
+            [
+              "IIIA",
+              "T1",
+              "N2a (4–6 ganglios)",
+              "M0",
+              "Poco frecuente; requiere cosecha ganglionar ≥ 12 nodos para estadificación adecuada"
+            ],
+            [
+              "IIIB",
+              "T3–T4a",
+              "N1",
+              "M0",
+              "T4a: penetra peritoneo visceral; incluye subgrupos con distinta biología"
+            ],
+            [
+              "IIIB",
+              "T2–T3",
+              "N2a",
+              "M0",
+              "Alto riesgo; preferir 6 meses de quimioterapia adyuvante (IDEA)"
+            ],
+            [
+              "IIIB",
+              "T1–T2",
+              "N2b (≥ 7 ganglios)",
+              "M0",
+              "N2b infrecuente sin T avanzado; evaluar calidad de linfadenectomía"
+            ],
+            [
+              "IIIC",
+              "T4a",
+              "N2a",
+              "M0",
+              "Peor pronóstico; cosiderar ensayo clínico"
+            ],
+            [
+              "IIIC",
+              "T3–T4a",
+              "N2b",
+              "M0",
+              "Alta carga ganglionar; 6 meses adyuvancia estándar"
+            ],
+            [
+              "IIIC",
+              "T4b",
+              "N1–N2",
+              "M0",
+              "T4b: invasión de estructuras adyacentes; evaluar resección en bloque"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "pearl",
+          "content": "Diferencia clave colon vs. recto en estadificación: En colon, el estadio se define por anatomía patológica (pTNM) sobre la pieza resecada. En recto, se trabaja con dos estadios distintos: el clínico pre-neoadyuvante (cTNM por RM) y el patológico post-neoadyuvante (ypTNM). La respuesta patológica completa (ypT0N0) tiene implicaciones pronósticas favorables y, en ciertos protocolos, habilita estrategias de 'watch and wait'. Documentar ambos estadios en el registro oncológico es obligatorio."
+        },
+        {
+          "type": "callout",
+          "variant": "guideline",
+          "content": "NCCN Guidelines Colon Cancer / Rectal Cancer (v.2024): La cosecha mínima de 12 ganglios linfáticos es estándar para una estadificación N adecuada. Un resultado pN0 con < 12 ganglios analizados debe registrarse como estadificación ganglionar insuficiente (pNx en la práctica). ESMO 2020 respalda RM pélvica como obligatoria en cáncer de recto antes de cualquier tratamiento, con reporte estructurado que incluya CRM, EMVI y nivel tumoral."
+        },
+        {
+          "type": "key_points",
+          "points": [
+            "Colonoscopia completa + biopsia es el primer paso diagnóstico; el CEA preoperatorio tiene valor pronóstico y establece la línea de base para vigilancia.",
+            "TC de tórax/abdomen/pelvis es la estadificación sistémica estándar en colon; en recto, la RM pélvica de alta resolución es obligatoria para definir CRM, EMVI y planificación neoadyuvante.",
+            "El PET-TC no está indicado de rutina en estadio III operable — reservarlo para hallazgos indeterminados o sospecha de recurrencia.",
+            "El estadio III de colon se clasifica en subestadios IIIA–IIIC por combinaciones T1–T4b / N1–N2b (AJCC 8ª ed.); el subestadio determina la duración óptima de la quimioterapia adyuvante (3 vs. 6 meses, IDEA).",
+            "En recto: documentar siempre cTNM (pre-tratamiento por RM) y ypTNM (post-neoadyuvante en la pieza); ambos son clínicamente relevantes y pronósticos.",
+            "Una cosecha ganglionar < 12 nodos representa estadificación N inadecuada y puede llevar a subestadiaje — implicación directa en la decisión de adyuvancia."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2-S4",
+      "title": "Biomarcadores moleculares",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Biomarcadores moleculares en cáncer colorrectal estadio III",
+          "content": "El perfil molecular del tumor colorrectal en estadio III cumple una doble función: orientar las decisiones de tratamiento adyuvante y anticipar las opciones terapéuticas si la enfermedad progresa a estadio IV. El panel mínimo recomendado al diagnóstico incluye estado de reparación de errores de emparejamiento (MMR/MSI), mutaciones en RAS (KRAS/NRAS exones 2–4), mutación BRAF V600E y amplificación de HER2. La lateralidad tumoral — colon derecho versus izquierdo — añade un contexto pronóstico y predictivo que debe integrarse en la interpretación de estos marcadores. Omitir cualquiera de ellos en la pieza quirúrgica implica diferir decisiones que son tiempo-dependientes para el paciente."
+        },
+        {
+          "type": "table",
+          "title": "Resumen del panel molecular en estadio III: implicaciones clínicas",
+          "headers": [
+            "Biomarcador",
+            "Frecuencia en estadio III",
+            "Relevancia pronóstica",
+            "Relevancia predictiva (adyuvancia)",
+            "Relevancia predictiva (metástasis)"
+          ],
+          "rows": [
+            [
+              "MSI-H / dMMR",
+              "~15–20%",
+              "Favorable en estadios tempranos; beneficio atenuado en estadio III vs MSS",
+              "Evitar fluoropirimidina en monoterapia; FOLFOX/CAPOX estándar",
+              "Elegibilidad para inmunoterapia (pembrolizumab 1ª línea)"
+            ],
+            [
+              "BRAF V600E",
+              "~5–10% del total; coexiste con MSI-H en ~5–10%",
+              "Marcador de mal pronóstico en estadio III y IV",
+              "Sin terapia dirigida adyuvante estándar",
+              "Triplete BEACON (encorafenib + binimetinib + cetuximab) estándar"
+            ],
+            [
+              "KRAS/NRAS mutado (exones 2–4)",
+              "~50–55% combinado",
+              "Sin impacto independiente claro en estadio III",
+              "Sin impacto en adyuvancia",
+              "Excluye anti-EGFR (cetuximab / panitumumab)"
+            ],
+            [
+              "RAS / RAF wild-type",
+              "~40–45%",
+              "Mejor pronóstico relativo en tumor izquierdo",
+              "Sin impacto en adyuvancia",
+              "Elegible para anti-EGFR solo si tumor izquierdo"
+            ],
+            [
+              "HER2 amplificado",
+              "~2–3%",
+              "Sin datos sólidos en estadio III",
+              "Sin indicación adyuvante actualmente",
+              "Tucatinib + trastuzumab (MOUNTAINEER); excluyente con RAS/BRAF mut."
+            ],
+            [
+              "Tumor lado derecho",
+              "Enriquecido en MSI-H y BRAF V600E",
+              "Peor pronóstico global vs lado izquierdo en MSS",
+              "Sin cambio en esquema adyuvante",
+              "Anti-EGFR sin beneficio demostrado independiente de RAS"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "RAS (KRAS/NRAS) y lateralidad tumoral",
+          "content": "Las mutaciones en KRAS y NRAS (exones 2, 3 y 4) son el determinante negativo más relevante para el uso de anticuerpos anti-EGFR en enfermedad metastásica. En estadio III, estas mutaciones no modifican la indicación ni el esquema de quimioterapia adyuvante, pero su determinación en la pieza quirúrgica es obligatoria porque el ~30–50% de los estadios III eventualmente recaen y necesitarán una decisión terapéutica inmediata. La lateralidad añade una capa adicional: incluso en tumores RAS/RAF wild-type, los tumores del colon derecho presentan una respuesta inferior a los anti-EGFR en primera línea metastásica — el beneficio de cetuximab y panitumumab se concentra en tumores del lado izquierdo (colon descendente, sigma, recto). Esta interacción entre lateralidad y estado RAS debe comunicarse al paciente desde el estadio III como parte del pronóstico y la planificación de contingencias."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Error frecuente: no solicitar el panel molecular completo en la pieza quirúrgica",
+          "content": "Un residente solicita solo MSI/MMR en la pieza de colectomía de un estadio III y difiere RAS, BRAF y HER2 'para cuando se necesiten'. Seis meses después, el paciente desarrolla metástasis hepáticas y la muestra original ya no está disponible en condiciones óptimas para retest. La biopsia de la metástasis es factible pero no siempre accesible. La determinación completa del panel molecular debe realizarse de forma sistemática e inmediata en la pieza quirúrgica de todo estadio III — no cuando el paciente progresa."
+        },
+        {
+          "type": "text",
+          "title": "MSI-H / dMMR: determinación universal y síndrome de Lynch",
+          "content": "La política de cribado universal de MMR — mediante inmunohistoquímica de las cuatro proteínas MLH1, MSH2, MSH6 y PMS2 en toda pieza de cáncer colorrectal — está respaldada por NCCN y ESMO como estándar de práctica, independientemente de la edad o el estadio. En estadio III, el 15–20% de los tumores son MSI-H/dMMR; la mayoría en el colon derecho. Ante la pérdida de MLH1, el siguiente paso crítico es determinar si se trata de un fenómeno esporádico (metilación del promotor de MLH1, asociado a BRAF V600E y perfil CIMP-alto) o una variante germinal (síndrome de Lynch). La coexistencia de MSI-H + BRAF V600E hace altamente improbable el síndrome de Lynch y debe desencadenar reflexivamente el análisis de metilación del promotor de MLH1, evitando derivaciones innecesarias a consejo genético germinal."
+        },
+        {
+          "type": "callout",
+          "variant": "pearl",
+          "title": "MSI-H + BRAF V600E: no es Lynch — actúa antes de derivar",
+          "content": "Cuando un tumor MSI-H presenta simultáneamente mutación BRAF V600E, la probabilidad de síndrome de Lynch es <1–2%. El mecanismo es silenciamiento epigenético por metilación del promotor MLH1 (fenotipo CIMP-alto, esporádico). Solicitar el análisis de metilación de MLH1 antes de la derivación a genética evita una cadena de pruebas germinales innecesarias y reduce la ansiedad familiar. Esta distinción tiene implicaciones directas para el consejo familiar y el cribado de familiares de primer grado."
+        },
+        {
+          "type": "landmark_trial",
+          "name": "KEYNOTE-177",
+          "citation": "André T, et al. Pembrolizumab in Microsatellite-Instability–High Advanced Colorectal Cancer. N Engl J Med. 2020;383:2207-2218.",
+          "population": "Pacientes con CRC metastásico MSI-H/dMMR no tratados previamente",
+          "intervention": "Pembrolizumab vs quimioterapia estándar (FOLFOX4 o FOLFOX6 ± bevacizumab/cetuximab) en primera línea",
+          "result": "Pembrolizumab mejoró significativamente la supervivencia libre de progresión frente a quimioterapia (PFS mediana 16,5 vs 8,2 meses; HR 0,60). Tasa de respuesta objetiva del 43,8% vs 33,1%.",
+          "practice_change": "Pembrolizumab en monoterapia es el estándar de primera línea para CRC metastásico MSI-H/dMMR, consolidando MSI/MMR como biomarcador predictivo obligatorio en estadio IV — y justificando su determinación universal desde estadio III."
+        },
+        {
+          "type": "callout",
+          "variant": "clinical",
+          "title": "HER2 en estadio III: testar ahora, no cuando progrese",
+          "content": "La amplificación de HER2 (~2–3% del CRC) es mutuamente excluyente con mutaciones en RAS y BRAF, y define una subpoblación que responde a tucatinib + trastuzumab (datos MOUNTAINEER) en enfermedad metastásica. En estadio III, no existe indicación adyuvante anti-HER2 actualmente. Sin embargo, la determinación debe realizarse en la pieza quirúrgica porque: (1) la biopsia de metástasis puede ser técnicamente difícil o mostrar heterogeneidad; (2) el resultado condiciona el algoritmo completo de líneas de tratamiento futuras. No esperes a que el paciente recaiga para solicitarla."
+        },
+        {
+          "type": "key_points",
+          "points": [
+            "El panel molecular mínimo en estadio III incluye MMR/MSI, KRAS/NRAS (exones 2–4), BRAF V600E y HER2 — debe solicitarse en la pieza quirúrgica, no diferirse a la recaída.",
+            "MSI-H/dMMR en estadio III: fluoropirimidina en monoterapia está contraindicada como adyuvancia; FOLFOX/CAPOX sigue siendo el estándar.",
+            "MSI-H + BRAF V600E indica casi siempre CRC esporádico por metilación del promotor MLH1 — solicitar test de metilación antes de derivar a consejo genético germinal.",
+            "RAS/NRAS mutado excluye el uso de anti-EGFR en línea metastásica; incluso en RAS wild-type, el beneficio anti-EGFR se restringe a tumores del lado izquierdo.",
+            "KEYNOTE-177 estableció pembrolizumab como primera línea estándar en CRC metastásico MSI-H, justificando la determinación universal de MMR desde el diagnóstico quirúrgico.",
+            "HER2 amplificado (~2–3%) es accionable en estadio IV (MOUNTAINEER: tucatinib + trastuzumab); su determinación en estadio III es prospectiva y obligatoria para planificación oncológica."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2-S5",
+      "title": "Tratamiento del cáncer de colon: cirugía y adyuvancia",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Oncological Principles of Colectomy for Colon Cancer",
+          "content": "Curative-intent surgery for colon cancer requires adherence to three non-negotiable oncological principles: complete mesocolic excision (CME), central vascular ligation (CVL), and harvest of ≥12 regional lymph nodes. CME—analogous to TME for rectal cancer—removes the intact mesocolon along embryological tissue planes, maximizing the lymphovascular envelope and reducing local recurrence. CVL at the vascular root ensures the highest nodal yield along the primary lymphatic drainage and achieves accurate pathological staging. An adequate lymph node harvest of ≥12 nodes is both a quality metric and a staging requirement: fewer than 12 nodes retrieved mandates explanation (prior chemotherapy, anatomical limitation, or poor surgical technique) and may lead to understaging, converting apparent Stage II disease to Stage III had additional nodes been examined. NCCN guidelines (v2024) identify <12 nodes as a high-risk feature in Stage II disease, with direct implications for adjuvant chemotherapy decision-making."
+        },
+        {
+          "type": "table",
+          "title": "Laparoscopic vs. Open Colectomy: Key RCT Evidence",
+          "headers": [
+            "Trial",
+            "Year",
+            "n",
+            "Design",
+            "Primary Endpoint",
+            "Key Result",
+            "Oncologic Equivalence"
+          ],
+          "rows": [
+            [
+              "COST (NCI)",
+              "2004",
+              "872",
+              "Multicenter RCT, colon only",
+              "Time to recurrence",
+              "3-year recurrence rate equivalent (16% lap vs 18% open)",
+              "Yes — laparoscopic non-inferior"
+            ],
+            [
+              "COLOR",
+              "2005",
+              "1248",
+              "Multicenter RCT, colon only",
+              "3-year DFS",
+              "DFS and OS equivalent at 3 years",
+              "Yes — laparoscopic non-inferior"
+            ],
+            [
+              "CLASSIC",
+              "2005",
+              "794",
+              "UK multicenter RCT, colon + rectal",
+              "3-year DFS",
+              "Colon subgroup: equivalent DFS; rectal: higher positive CRM rate laparoscopic",
+              "Yes for colon; conversion rate 29% rectal"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "pearl",
+          "content": "Laparoscopic colectomy is oncologically equivalent to open resection for colon cancer — but only when performed by a trained surgeon with adequate volume. The COST, COLOR, and CLASSIC trials established non-inferiority for colon primaries. The conversion rate in the CLASSIC rectal cohort (29%) and a higher positive circumferential resection margin rate should temper enthusiasm for laparoscopic rectal resection outside expert centers."
+        },
+        {
+          "type": "text",
+          "title": "Adjuvant Chemotherapy: Stage II Risk Stratification and Stage III Standard",
+          "content": "Adjuvant chemotherapy is the standard of care for all resected Stage III colon cancer. FOLFOX (oxaliplatin + fluorouracil/leucovorin) or CAPOX (capecitabine + oxaliplatin) are guideline-endorsed regimens with survival benefit established in multiple Phase III trials. For Stage II disease, adjuvant chemotherapy is NOT routinely recommended for low-risk patients, but is considered for high-risk Stage II features: T4 lesion, bowel obstruction or perforation at presentation, poorly differentiated histology (excluding MSI-H), perineural or lymphovascular invasion, <12 nodes examined, or positive/indeterminate margins. MSI-H status in Stage II disease specifically predicts lack of benefit from fluoropyrimidine monotherapy and is associated with favorable prognosis without chemotherapy — current NCCN/ESMO guidelines recommend against adjuvant 5-FU or capecitabine monotherapy in MSI-H Stage II tumors. When chemotherapy is offered in high-risk Stage II, the decision between FOLFOX and fluoropyrimidine monotherapy hinges on patient comorbidity, tolerance of oxaliplatin, and MSI status."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "content": "A resident orders adjuvant capecitabine monotherapy for a Stage II colon cancer patient with T3N0 disease and a single high-risk feature. The pathology returns MSI-H. This is a critical error: fluoropyrimidine monotherapy confers no benefit — and retrospective data suggest potential harm — in MSI-H tumors. If chemotherapy is indicated in MSI-H Stage II or Stage III disease, FOLFOX/CAPOX is the required backbone. Monotherapy with 5-FU or capecitabine alone is contraindicated in dMMR/MSI-H tumors."
+        },
+        {
+          "type": "table",
+          "title": "IDEA Collaboration: Adjuvant Chemotherapy Duration by Risk Substage",
+          "headers": [
+            "Stage III Substage",
+            "Risk Category",
+            "Preferred Regimen",
+            "Preferred Duration",
+            "Rationale"
+          ],
+          "rows": [
+            [
+              "T1-3 N1 (any)",
+              "Low-risk Stage III",
+              "CAPOX",
+              "3 months",
+              "Non-inferior DFS; substantially less grade ≥2 peripheral neuropathy"
+            ],
+            [
+              "T1-3 N1 (any)",
+              "Low-risk Stage III",
+              "FOLFOX",
+              "6 months preferred",
+              "3-month FOLFOX showed numeric inferiority in pooled IDEA analysis; 6 months favored if CAPOX not tolerated"
+            ],
+            [
+              "T4 or N2 (any)",
+              "High-risk Stage III",
+              "FOLFOX or CAPOX",
+              "6 months",
+              "DFS benefit maintained; neuropathy risk accepted given higher recurrence risk"
+            ],
+            [
+              "MSI-H, any Stage III",
+              "Any",
+              "FOLFOX or CAPOX",
+              "Per T/N substage",
+              "Fluoropyrimidine monotherapy contraindicated; oxaliplatin-based regimen is standard"
+            ]
+          ]
+        },
+        {
+          "type": "landmark_trial",
+          "name": "PROPHYLOCHIP-PRODIGE 15",
+          "citation": "PMID 32717180",
+          "population": "Patients at high risk of developing colorectal peritoneal metastases after primary resection",
+          "intervention": "Second-look surgery + hyperthermic intraperitoneal chemotherapy (HIPEC) vs. surveillance alone",
+          "result": "No statistically significant disease-free survival benefit was demonstrated for the interventional second-look surgery + HIPEC strategy compared to surveillance in high-risk Stage III colorectal cancer patients.",
+          "practice_change": "Prophylactic second-look surgery plus HIPEC should NOT be offered to high-risk Stage III colon cancer patients outside a clinical trial — Phase III evidence failed to show DFS benefit despite significant added surgical morbidity."
+        },
+        {
+          "type": "key_points",
+          "points": [
+            "CME with CVL and ≥12 lymph nodes harvested are the three non-negotiable oncological standards for curative colectomy; <12 nodes is both a staging failure and a high-risk feature triggering adjuvant chemotherapy consideration in Stage II disease.",
+            "Laparoscopic colectomy is oncologically equivalent to open resection for colon primaries (COST, COLOR, CLASSIC trials) and is the preferred approach at experienced centers.",
+            "All resected Stage III colon cancer patients should receive adjuvant FOLFOX or CAPOX; the IDEA collaboration established that 3 months of CAPOX is non-inferior to 6 months for low-risk Stage III (T1-3 N1), dramatically reducing peripheral neuropathy without compromising survival.",
+            "High-risk Stage III (T4 or N2) disease warrants 6 months of oxaliplatin-based therapy regardless of regimen choice.",
+            "MSI-H/dMMR tumors must NOT receive fluoropyrimidine monotherapy as adjuvant treatment in Stage II or Stage III disease — FOLFOX/CAPOX is the required standard when chemotherapy is indicated.",
+            "Prophylactic second-look surgery plus HIPEC is not standard of care for high-risk Stage III patients: PROPHYLOCHIP-PRODIGE 15 (Phase III, PMID 32717180) demonstrated no DFS benefit with this strategy."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2-S6",
+      "title": "Tratamiento del cáncer de recto: estrategias neoadyuvantes",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "MRI-Based Risk Stratification: The Foundation of Rectal Cancer Treatment Planning",
+          "content": "Modern rectal cancer management begins with high-resolution pelvic MRI to define the relationship of the tumor to the mesorectal fascia (MRF), extramural vascular invasion (EMVI), and nodal status. This imaging-based risk stratification — not clinical T/N stage alone — determines whether neoadjuvant therapy is indicated and what intensity is appropriate. The key categories are: low-risk (MRF-negative, no EMVI, cT1-3a N0), intermediate-risk (MRF-threatened but not involved, or cT3b-c N1-2 without worrisome features), and high/very-high-risk (MRF-involved, T4b, lateral nodal disease, or EMVI-positive). Patients with low-risk disease by MRI criteria may proceed directly to surgery without neoadjuvant therapy, a principle now firmly embedded in ESMO and NCCN guidelines."
+        },
+        {
+          "type": "table",
+          "title": "MRI-Based Risk Stratification for Rectal Cancer Neoadjuvant Therapy",
+          "headers": [
+            "Risk Category",
+            "MRI Features",
+            "Neoadjuvant Strategy",
+            "Surgical Goal"
+          ],
+          "rows": [
+            [
+              "Low-risk",
+              "MRF clear (>1 mm), cT1-3a, N0, no EMVI, upper rectum",
+              "Surgery first — no neoadjuvant (or selective RT omission per PROSPECT criteria)",
+              "Upfront TME; R0 expected"
+            ],
+            [
+              "Intermediate-risk",
+              "MRF threatened (≤1 mm but not involved), cT3b-c, N1-2, low rectum",
+              "Long-course CRT (50.4 Gy + fluoropyrimidine) OR short-course RT (5×5 Gy)",
+              "Downstage to R0 TME; sphincter preservation if applicable"
+            ],
+            [
+              "High-risk",
+              "MRF involved (T3 with <1 mm margin), cT4a, N2, EMVI+",
+              "Total Neoadjuvant Therapy (TNT): FOLFOX/CAPOX induction or consolidation + RT",
+              "Maximize R0 resection; pathologic complete response goal"
+            ],
+            [
+              "Very high-risk",
+              "cT4b (adjacent organ invasion), lateral pelvic node+, fixed tumor",
+              "TNT (RAPIDO or PRODIGE 23 protocol); multidisciplinary resection planning",
+              "R0 with possible extended resection; pCR a secondary goal"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Total Neoadjuvant Therapy: Rationale and Sequencing",
+          "content": "Total neoadjuvant therapy (TNT) consolidates all systemic chemotherapy into the preoperative window, addressing both local disease (via radiosensitization) and occult micrometastatic disease earlier in the treatment course. Two sequencing strategies exist: induction chemotherapy followed by chemoradiotherapy (induction TNT, as in PRODIGE 23), and short-course radiotherapy followed by consolidation chemotherapy before surgery (consolidation TNT, as in RAPIDO). Both approaches improve pathologic complete response (pCR) rates compared to conventional long-course CRT alone, but their impact on distant metastasis-free survival and overall survival differs in nuance. Importantly, TNT does not appear to compromise surgical outcomes or R0 resection rates when appropriately applied to high-risk disease."
+        },
+        {
+          "type": "landmark_trial",
+          "name": "RAPIDO",
+          "citation": "Bahadoer RR et al. Lancet Oncol. 2021;22(1):29-42.",
+          "population": "Locally advanced rectal cancer with high-risk MRI features (mrT4a/b, mrEMVI+, mrN2, threatened MRF, or lateral node+)",
+          "intervention": "Short-course RT (5×5 Gy) → consolidation CAPOX or FOLFOX (18 weeks) → TME vs. long-course CRT (50.4 Gy + capecitabine) → optional adjuvant chemotherapy → TME",
+          "result": "3-year disease-related treatment failure: 23.7% (TNT arm) vs. 30.4% (standard arm); pCR rate 28.4% vs. 14.3%",
+          "practice_change": "TNT with short-course RT + consolidation chemotherapy became the preferred strategy for high-risk locally advanced rectal cancer, displacing standard long-course CRT as the benchmark."
+        },
+        {
+          "type": "landmark_trial",
+          "name": "PRODIGE 23",
+          "citation": "Conroy T et al. Lancet Oncol. 2021;22(5):702-715.",
+          "population": "Locally advanced rectal cancer (cT3-4 M0), fit for oxaliplatin-based chemotherapy",
+          "intervention": "Induction mFOLFIRINOX (6 cycles) → long-course CRT → TME → adjuvant FOLFOX vs. long-course CRT alone → TME → adjuvant FOLFOX",
+          "result": "3-year disease-free survival: 75.7% (TNT arm) vs. 68.5% (standard arm); pCR rate 27.5% vs. 11.7%",
+          "practice_change": "Induction FOLFIRINOX before chemoradiotherapy improved DFS and pCR rates in locally advanced rectal cancer, establishing induction TNT as a viable alternative sequencing strategy to consolidation TNT."
+        },
+        {
+          "type": "landmark_trial",
+          "name": "PROSPECT",
+          "citation": "Schrag D et al. N Engl J Med. 2023;389(4):322-334.",
+          "population": "Low-risk locally advanced rectal cancer: cT2N1, cT3N0, or cT3N1 with MRF-negative tumors amenable to sphincter-preserving resection",
+          "intervention": "Neoadjuvant FOLFOX (6 cycles) with selective CRT only if <20% tumor regression → TME → adjuvant FOLFOX vs. standard long-course CRT → TME → adjuvant FOLFOX",
+          "result": "5-year DFS: 80.8% (FOLFOX arm) vs. 78.6% (CRT arm); local recurrence rates were non-inferior; RT omitted in 89% of the FOLFOX arm",
+          "practice_change": "Selective omission of radiotherapy using FOLFOX-based neoadjuvant chemotherapy is non-inferior to standard CRT in carefully selected low-risk rectal cancer, sparing the majority of eligible patients from pelvic RT toxicity."
+        },
+        {
+          "type": "case",
+          "scenario": "A 48-year-old woman presents with a cT3N1 mid-rectal adenocarcinoma. Pelvic MRI shows the tumor 2 mm from the MRF (threatened), no EMVI, and two perirectal nodes measuring 8 mm with irregular borders. She has no peritoneal disease on staging CT. Her performance status is excellent and she is motivated to avoid a permanent colostomy.",
+          "discussion": "This patient falls in the intermediate-to-high-risk category by MRI criteria (threatened MRF, N1 disease). She is a candidate for TNT rather than CRT alone, given the MRF threat and N1 status. Either RAPIDO-style (short-course RT → consolidation FOLFOX/CAPOX) or PRODIGE 23-style (induction FOLFIRINOX → CRT) is appropriate. A critical secondary goal in this patient is achieving sufficient downstaging to permit sphincter-preserving surgery — making pCR assessment and possible watch-and-wait strategy (OPRA criteria) a relevant shared decision-making discussion at baseline."
+        },
+        {
+          "type": "callout",
+          "variant": "pearl",
+          "title": "Watch & Wait After cCR: The OPRA Framework",
+          "content": "The OPRA trial (Garcia-Aguilar et al., J Clin Oncol 2022) demonstrated that among patients achieving a clinical complete response (cCR) after TNT, approximately 40% can avoid surgery with a watch-and-wait strategy, with 3-year organ preservation rates of 58% (consolidation TNT) vs. 43% (induction TNT). Organ preservation should only be offered through a structured surveillance protocol: digital rectal exam + endoscopy every 3 months for 2 years. Critically, ~25% of patients who initially achieve cCR will develop local regrowth, and >90% of regrowths are still salvageable with surgery — making rigorous surveillance non-negotiable, not optional."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Do Not Apply TNT Protocols to Low-Risk Rectal Cancer",
+          "content": "A resident orders neoadjuvant FOLFIRINOX + CRT for a cT3N0 upper rectal tumor with a clear MRF on MRI. This overtreats the patient: upper rectal low-risk tumors may not require any neoadjuvant therapy, and intermediate/low-risk tumors with clear MRF may be candidates for PROSPECT-style selective RT omission. TNT carries cumulative toxicity — specifically grade 3+ peripheral neuropathy and hematologic toxicity — that is only justified when the risk-benefit ratio favors aggressive downstaging. Always reassess the MRI risk tier before selecting a neoadjuvant regimen."
+        },
+        {
+          "type": "key_points",
+          "points": [
+            "MRI-based risk stratification (MRF status, EMVI, T/N category) is the essential first step; clinical T/N stage alone is insufficient to guide neoadjuvant therapy selection in rectal cancer.",
+            "TNT (total neoadjuvant therapy) improves pCR rates and disease-related treatment failure compared to standard CRT in high-risk disease — RAPIDO (consolidation) and PRODIGE 23 (induction) are the two landmark protocols.",
+            "PROSPECT established that selective RT omission using neoadjuvant FOLFOX is non-inferior to CRT in low-risk rectal cancer (clear MRF, cT2-3N0-1), sparing RT toxicity in the majority of eligible patients.",
+            "Watch-and-wait after clinical complete response (cCR) is a valid organ-preservation strategy per OPRA criteria, but requires structured, protocol-driven surveillance every 3 months — regrowth occurs in ~25% and demands prompt surgical salvage.",
+            "MSI-H/dMMR status is particularly relevant in rectal cancer being considered for immunotherapy-based neoadjuvant approaches (investigational), and should be assessed at diagnosis alongside RAS/BRAF profiling.",
+            "Short-course RT (5×5 Gy) followed by consolidation chemotherapy (RAPIDO) and long-course CRT preceded by induction FOLFIRINOX (PRODIGE 23) are both acceptable TNT strategies for high/very-high-risk disease — choice should be individualized by multidisciplinary team discussion."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2-S7",
+      "title": "Tratamiento de la enfermedad metastásica",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Tratamiento de la Enfermedad Metastásica (mCRC): Principios Generales",
+          "content": "El manejo del cáncer colorrectal metastásico (mCRC) requiere una estrategia secuencial y personalizada basada en el perfil molecular del tumor, la carga y distribución de la enfermedad, y el estado funcional del paciente. La selección del esquema de primera línea debe integrar el estado de RAS/BRAF, MSI/MMR, HER2, y la lateralidad tumoral antes de iniciar cualquier tratamiento sistémico. La distinción entre enfermedad potencialmente resecable y no resecable en el momento del diagnóstico determina si el objetivo del tratamiento es conversión a resecabilidad (con intención curativa) o control paliativo de la enfermedad. El tumor board multidisciplinar con cirujano hepatobiliar, oncólogo médico, y radiólogo intervencionista es esencial desde la primera visita."
+        },
+        {
+          "type": "table",
+          "title": "Selección de Régimen de Primera Línea en mCRC según Perfil Molecular y Sidedness",
+          "headers": [
+            "Subgrupo",
+            "Régimen Preferido",
+            "Régimen a Evitar",
+            "Fundamento"
+          ],
+          "rows": [
+            [
+              "RAS wt / izquierdo",
+              "FOLFOX o FOLFIRI + anti-EGFR (cetuximab/panitumumab)",
+              "Bevacizumab como primera elección",
+              "Beneficio de anti-EGFR maximizado en tumor izquierdo RAS/BRAF wt"
+            ],
+            [
+              "RAS wt / derecho",
+              "FOLFOX o FOLFIRI + bevacizumab",
+              "Anti-EGFR en monoterapia o primera línea",
+              "Tumores derechos enriquecidos en MSI-H/BRAF V600E; anti-EGFR menos eficaz"
+            ],
+            [
+              "RAS mutado (cualquier lado)",
+              "FOLFOX o FOLFIRI + bevacizumab; considerar FOLFOXIRI + bev si PS 0-1",
+              "Anti-EGFR (cetuximab/panitumumab)",
+              "Anti-EGFR no activo en RAS mutado"
+            ],
+            [
+              "BRAF V600E mutado",
+              "FOLFOXIRI + bevacizumab (1ª línea); BEACON triplete (líneas posteriores)",
+              "Fluoropirimidina monoterapia",
+              "Pronóstico adverso; triplete intensifica respuesta inicial; BEACON en progresión"
+            ],
+            [
+              "MSI-H / dMMR",
+              "Pembrolizumab en monoterapia (KEYNOTE-177)",
+              "FOLFOX/FOLFIRI como primera línea estándar en MSI-H",
+              "Superioridad de pembrolizumab sobre quimioterapia en PFS y calidad de vida"
+            ],
+            [
+              "Alta carga tumoral / conversión",
+              "FOLFOXIRI + bevacizumab (TRIBE/TRIBE2)",
+              "Doblete si el objetivo es máxima reducción tumoral",
+              "Triplete asociado a mayor tasa de R0 en enfermedad potencialmente resecable"
+            ]
+          ]
+        },
+        {
+          "type": "landmark_trial",
+          "name": "KEYNOTE-177",
+          "title": "Pembrolizumab vs. Quimioterapia en Primera Línea MSI-H/dMMR mCRC",
+          "population": "Pacientes con mCRC MSI-H/dMMR no tratados previamente",
+          "intervention": "Pembrolizumab 200 mg cada 3 semanas vs. elección del investigador (FOLFOX o FOLFIRI ± bevacizumab o cetuximab)",
+          "result": "Mediana de PFS: 16,5 meses con pembrolizumab vs. 8,2 meses con quimioterapia (HR 0,60; p=0,0002). Tasa de respuesta objetiva: 43,8% vs. 33,1%. Beneficio en OS confirmado en actualización.",
+          "practice_change": "Pembrolizumab en monoterapia reemplaza la quimioterapia estándar como tratamiento de primera línea en todos los pacientes con mCRC MSI-H/dMMR.",
+          "citation": "KEYNOTE-177 — André T et al., NEJM 2020"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "content": "ERROR FRECUENTE: Iniciar FOLFOX + bevacizumab en un paciente con mCRC MSI-H/dMMR sin evaluar primero la elegibilidad para pembrolizumab. La quimioterapia no es el estándar de primera línea en este subgrupo — la ventana terapéutica de máximo beneficio inmunológico se pierde si se expone primero a quimioterapia. Solicitar siempre el estado MMR/MSI antes del inicio de cualquier línea sistémica."
+        },
+        {
+          "type": "text",
+          "title": "Enfermedad Hepática Resecable: Estrategia Quirúrgica",
+          "content": "Las metástasis hepáticas aisladas o predominantes ocurren en aproximadamente el 15–25% de los pacientes con mCRC y representan el único escenario con potencial curativo en enfermedad metastásica. La resección R0 con margen negativo es el objetivo; márgenes de 1 mm son aceptables si se preserve función hepática adecuada. La elección entre resección simultánea (colorrectal + hepática en mismo acto) vs. estadificada depende de la carga hepática, el estado del paciente y la complejidad técnica: resecciones hepáticas mayores (≥3 segmentos) se estadifican habitualmente. En enfermedad hepática contralateral que compromete el volumen hepático futuro remanente (FLR <25–30% en hígado sano, <40% tras quimioterapia), la embolización de la vena porta (PVE) o el ALPPS (Associating Liver Partition and Portal Vein Ligation for Staged Hepatectomy) permite hipertrofia del lóbulo contralateral, aunque ALPPS conlleva mayor morbimortalidad perioperatoria que la PVE convencional y debe reservarse para centros de alto volumen."
+        },
+        {
+          "type": "callout",
+          "variant": "clinical",
+          "content": "ALPPS genera hipertrofia hepática más rápida que la PVE (2–3 semanas vs. 4–8 semanas), pero la morbilidad mayor (Clavien-Dindo ≥III) es significativamente superior. La indicación óptima de ALPPS es el paciente con FLR insuficiente para PVE convencional, tumor bilobular sin respuesta a quimioterapia, y ventana de resecabilidad corta. Nunca debe ofrecerse como primera opción técnica."
+        },
+        {
+          "type": "landmark_trial",
+          "name": "PROPHYLOCHIP-PRODIGE 15",
+          "title": "Cirugía de Second-Look + HIPEC vs. Vigilancia en Pacientes de Alto Riesgo de Metástasis Peritoneales",
+          "population": "Pacientes con cáncer colorrectal de alto riesgo de desarrollar metástasis peritoneales (ovario resecado, perforación tumoral, metástasis peritoneales mínimas resecadas en la cirugía índice)",
+          "intervention": "Cirugía de second-look + HIPEC (oxaliplatino) a los 6 meses de la cirugía índice vs. vigilancia estándar con imagen",
+          "result": "No se demostró beneficio estadísticamente significativo en supervivencia libre de enfermedad (DFS) con la estrategia intervencionista frente a vigilancia. La cirugía profiláctica añadió morbilidad sin mejorar el pronóstico oncológico.",
+          "practice_change": "La cirugía de second-look profiláctica más HIPEC NO debe ofrecerse de forma estándar a pacientes de alto riesgo de Stage III/mCRC fuera de ensayo clínico.",
+          "citation": "PROPHYLOCHIP-PRODIGE 15 — Arjona-Sánchez A et al., Lancet Oncol 2020. PMID 32717180"
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "content": "PRECAUCIÓN EN EXTRAPOLACIÓN: La revisión JAMA Oncology 2021 (PMID 33956063) analiza HIPEC conjuntamente en cáncer de ovario y colorrectal peritoneal. Los datos favorables de HIPEC en cáncer de ovario (OVHIPEC-1) NO son transferibles al CRC peritoneal — son enfermedades biológicamente distintas con quimiosensibilidades diferentes. En mCRC con carcinomatosis peritoneal, la evidencia de HIPEC se basa en el ensayo PRODIGE 7, que no demostró beneficio añadido de HIPEC sobre citorreducción completa sola."
+        },
+        {
+          "type": "key_points",
+          "title": "Puntos Clave: Tratamiento del mCRC",
+          "points": [
+            "El perfil molecular completo (RAS, BRAF, MSI/MMR, HER2) y la lateralidad tumoral deben conocerse ANTES de iniciar cualquier línea sistémica — determinan el régimen óptimo de primera línea.",
+            "MSI-H/dMMR mCRC: pembrolizumab en monoterapia es el estándar de primera línea (KEYNOTE-177; PFS 16,5 vs. 8,2 meses), superando a la quimioterapia convencional.",
+            "BRAF V600E en mCRC confiere pronóstico adverso; FOLFOXIRI + bevacizumab en primera línea seguido de triplete BEACON (encorafenib + binimetinib + cetuximab) en progresión es la secuencia estándar.",
+            "Las metástasis hepáticas resecables deben evaluarse en tumor board con cirujano hepatobiliar; la resección R0 es el único escenario curativo en mCRC. ALPPS y PVE son herramientas de conversión de FLR insuficiente, no de primera elección.",
+            "PROPHYLOCHIP-PRODIGE 15 (PMID 32717180): la cirugía de second-look profiláctica + HIPEC no mejora la DFS en pacientes de alto riesgo y NO es estándar fuera de ensayo clínico.",
+            "Los datos de HIPEC en cáncer de ovario (PMID 33956063) no son extrapolables a CRC peritoneal — evitar razonar por analogía entre estas dos entidades al asesorar a pacientes con carcinomatosis colorrectal."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2-S8",
+      "title": "Técnica quirúrgica oncológica",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Oncologic Principles of Colorectal Resection",
+          "content": "The oncologic goals of colorectal resection are threefold: complete removal of the primary tumor with clear radial and longitudinal margins (R0), resection of the regional lymphatic basin to its vascular origin, and preservation of the autonomic nervous system to maintain urinary and sexual function. Achieving R0 status is the single strongest surgeon-modifiable determinant of locoregional recurrence. In Stage III disease, where nodal positivity is already established, the adequacy of lymphadenectomy — defined by ≥12 lymph nodes harvested — directly impacts staging accuracy, guides adjuvant chemotherapy decisions, and may confer independent survival benefit through removal of occult nodal disease. Failure to meet this threshold should prompt pathologic re-examination before concluding nodal assessment is complete."
+        },
+        {
+          "type": "text",
+          "title": "Right Hemicolectomy: Vascular Anatomy and D3 Lymphadenectomy",
+          "content": "The ileocolic artery is the primary vascular pedicle for right hemicolectomy and must be ligated at its origin from the superior mesenteric artery (SMA) to achieve a D3 (complete mesocolic excision, CME) dissection. Early identification of the superior mesenteric vein (SMV) provides the medial-to-lateral dissection plane; the embryologic fusion plane between the mesocolon and the retroperitoneum (Toldt's fascia) is avascular and should be developed bluntly. High ligation of the right colic artery (when present) and the right branch of the middle colic artery extends the lymphadenectomy to the central nodes. CME with central vascular ligation has been associated with higher nodal yield and lower locoregional recurrence rates compared to conventional right hemicolectomy in observational data, though randomized Level I evidence remains limited. Medial-to-lateral dissection reduces the risk of inadvertent duodenal and retroperitoneal injury compared to lateral-to-medial approaches."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "content": "A resident ligates what appears to be the ileocolic artery early in the dissection without first identifying the SMV. If the SMV has not been positively confirmed, the structure being ligated may be the SMV itself or a jejunal branch — catastrophic venous infarction can result. Always identify and trace the SMV before any pedicle ligation during right hemicolectomy."
+        },
+        {
+          "type": "text",
+          "title": "Left Hemicolectomy and Sigmoid Resection: IMA Ligation and Ureter Identification",
+          "content": "The central controversy in left-sided colonic resection is the level of inferior mesenteric artery (IMA) ligation: high tie (flush at the aorta, distal to the left colic artery origin) versus low tie (preservation of the left colic artery, ligation distal to it). High ligation maximizes nodal harvest along the IMA trunk — the D3 territory — and provides greater colonic mobilization for a tension-free anastomosis. Low ligation theoretically preserves perfusion to the anastomosis via the left colic artery, but current evidence does not consistently demonstrate a reduction in anastomotic leak rates that would justify compromising nodal clearance in Stage III disease. The left ureter and gonadal vessels are at greatest risk during IMA ligation and must be positively identified before any ligation is performed; they lie in the retroperitoneum just lateral to the IMA origin. Failure to identify the ureter before dividing pedicles accounts for a significant proportion of iatrogenic ureteral injuries in colorectal surgery."
+        },
+        {
+          "type": "callout",
+          "variant": "pearl",
+          "content": "For left hemicolectomy, enter the avascular retroperitoneal plane medially at the IMA origin before mobilizing the splenic flexure. Identifying the left ureter from a medial approach — while it is still attached to the retroperitoneum and Gerota's fascia — is far safer than searching for it after lateral mobilization has disrupted the tissue planes."
+        },
+        {
+          "type": "text",
+          "title": "Total Mesorectal Excision: Sharp Dissection and Nerve Preservation",
+          "content": "Total mesorectal excision (TME) is the anatomic standard for rectal cancer resection and requires sharp dissection in the holy plane — the areolar tissue between the visceral (mesorectal) fascia and the parietal (presacral) fascia — under direct vision throughout. Blunt or finger dissection tears the mesorectal envelope, creates positive circumferential resection margins (CRM), and seeds the surgical field with tumor deposits. The mesorectal fascia must remain intact on the specimen; a defect or incomplete dissection mandates intraoperative reassessment. Autonomic nerve preservation requires identification and protection of the superior hypogastric plexus at the IMA origin, the hypogastric nerves at the sacral promontory, and the pelvic nerve plexus (S2–S4) lateral to the rectum at the level of the seminal vesicles or vagina. Lateral dissection is the most common site of pelvic nerve injury and should always be performed under direct vision, staying medial to the neurovascular bundles."
+        },
+        {
+          "type": "case",
+          "scenario": "A 54-year-old man undergoes laparoscopic low anterior resection with TME for a T3N1 rectal cancer at 8 cm from the anal verge. The pathology report returns noting 'incomplete mesorectal excision' with a defect in the mesorectal fascia and a CRM of 0.8 mm. The patient has not received neoadjuvant therapy.",
+          "discussion": "This is a positive or near-positive CRM (<1 mm) resulting from incomplete TME — a direct technical failure. In the absence of neoadjuvant radiotherapy, this patient is at high risk for locoregional recurrence and should be referred urgently to a multidisciplinary team for discussion of adjuvant pelvic radiotherapy and systemic chemotherapy. The operative report should be reviewed for the anatomic level at which the plane was lost; lateral dissection and the anterior peritoneal reflection are the most common sites of mesorectal envelope violation. This case illustrates why TME quality — judged by the pathologist on fresh specimen — is a measurable surgical quality indicator."
+        },
+        {
+          "type": "table",
+          "title": "Anastomotic Strategy and Defunctioning Stoma Indications",
+          "headers": [
+            "Clinical Scenario",
+            "Preferred Anastomotic Technique",
+            "Defunctioning Stoma Indicated?",
+            "Key Consideration"
+          ],
+          "rows": [
+            [
+              "Right hemicolectomy, standard",
+              "Handsewn or stapled ileocolic",
+              "No (routine)",
+              "Either technique acceptable; tension and perfusion paramount"
+            ],
+            [
+              "Left hemicolectomy / sigmoid, non-irradiated",
+              "Circular stapled end-to-end or side-to-end",
+              "No (routine)",
+              "Ensure tension-free; confirm donuts intact after stapler firing"
+            ],
+            [
+              "Low anterior resection, ≤6 cm from anal verge",
+              "Double-stapled colorectal or coloanal",
+              "Yes — loop ileostomy strongly recommended",
+              "Leak rate increases with decreasing height; stoma reduces clinical severity of leak"
+            ],
+            [
+              "Low anterior resection after long-course neoadjuvant CRT",
+              "Double-stapled or coloanal",
+              "Yes — defunctioning stoma mandatory",
+              "Irradiated tissue has impaired healing; anastomotic leak risk substantially elevated"
+            ],
+            [
+              "Hartmann's / end colostomy (no anastomosis)",
+              "N/A",
+              "End colostomy created (no anastomosis)",
+              "Reserve for emergency, contaminated field, or hemodynamically unstable patient"
+            ],
+            [
+              "Coloanal anastomosis with colonic J-pouch",
+              "Handsewn coloanal",
+              "Yes — mandatory diversion",
+              "J-pouch improves short-term function vs. straight pull-through; requires 8–12 cm of colon"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "clinical",
+          "content": "After firing a circular stapler for a low colorectal anastomosis, always perform intraoperative air-leak testing (transanal insufflation with the pelvis filled with saline) before closing. A visible air leak mandates intraoperative repair or conversion to a Hartmann's procedure — do not rely on a defunctioning stoma alone to manage a technically failed anastomosis."
+        },
+        {
+          "type": "key_points",
+          "points": [
+            "R0 resection with ≥12 lymph nodes harvested is the surgical floor for Stage III CRC — nodal count below this threshold mandates pathologic re-examination before staging is finalized.",
+            "During right hemicolectomy, identify the SMV before ligating any pedicle; medial-to-lateral dissection in Toldt's plane minimizes retroperitoneal injury.",
+            "High IMA ligation (D3) is preferred in left-sided resection for Stage III disease to maximize nodal clearance; the left ureter must be positively identified before any ligation.",
+            "TME requires sharp dissection in the holy plane with an intact mesorectal envelope — incomplete excision with a positive or near-positive CRM (<1 mm) is a surgically preventable cause of locoregional recurrence.",
+            "Defunctioning loop ileostomy is mandatory for anastomoses ≤6 cm from the anal verge and for all anastomoses following neoadjuvant chemoradiotherapy; it reduces the clinical consequence of leak but does not replace technical anastomotic quality.",
+            "Intraoperative air-leak testing after stapled colorectal anastomosis is a non-negotiable quality step — a positive leak requires immediate intraoperative management, not expectant observation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2-S9",
+      "title": "Complicaciones y manejo postoperatorio",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Anastomotic Leak: Incidence, Diagnosis, and Classification",
+          "content": "Anastomotic leak (AL) remains the most feared postoperative complication following colorectal resection, with incidence directly correlated to anastomotic level. Ileocolic and right colonic anastomoses carry a leak rate of 1–3%, while left colonic anastomoses approach 3–6% and low rectal anastomoses (within 5–7 cm of the anal verge) range from 10–20% even with defunctioning stoma. CT scan with rectal contrast or water-soluble enema is the diagnostic modality of choice when clinical suspicion arises — fever, leukocytosis, and tachycardia on postoperative days 3–7 should prompt immediate imaging rather than watchful waiting. The Hinchey classification, originally developed for diverticular perforation, is routinely adapted for post-anastomotic contamination: Grade I (pericolic/mesorectal abscess), Grade II (pelvic abscess), Grade III (purulent peritonitis), Grade IV (fecal peritonitis). This grading directly guides the choice between percutaneous drainage, endoluminal vacuum therapy, or return to the operating room."
+        },
+        {
+          "type": "table",
+          "title": "Management of Anastomotic Leak by Hinchey Grade",
+          "headers": [
+            "Hinchey Grade",
+            "Clinical Presentation",
+            "Preferred Management",
+            "Stoma Consideration"
+          ],
+          "rows": [
+            [
+              "Grade I",
+              "Localized pericolic/mesorectal abscess, no free peritoneal contamination",
+              "CT-guided percutaneous drainage + IV antibiotics",
+              "Defunctioning loop ileostomy if anastomosis preserved"
+            ],
+            [
+              "Grade II",
+              "Contained pelvic abscess, hemodynamically stable",
+              "Percutaneous drainage ± endoluminal vacuum-assisted closure (EndoVAC); IV antibiotics",
+              "Consider diverting ileostomy if not already present"
+            ],
+            [
+              "Grade III",
+              "Purulent peritonitis, systemically unwell",
+              "Return to OR: washout, proximal diversion (Hartmann or loop stoma); anastomosis may be preserved with EndoVAC",
+              "Diverting stoma mandatory"
+            ],
+            [
+              "Grade IV",
+              "Fecal peritonitis, hemodynamically unstable",
+              "Emergency laparotomy: Hartmann's procedure or resection with end stoma; anastomosis taken down",
+              "End colostomy standard; reversal deferred ≥3–6 months"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "content": "A resident reassures the team that a low-grade fever on POD 4 after a low anterior resection 'is expected after pelvic dissection' and defers imaging. This is a dangerous pattern — AL after LAR peaks on POD 3–7 and subtle signs (persistent tachycardia >90, CRP >150 mg/L on POD 3–5, failure to tolerate diet) mandate CT with rectal contrast before clinical deterioration into Hinchey III/IV. Early diagnosis preserves the anastomosis; delayed diagnosis forces a Hartmann."
+        },
+        {
+          "type": "text",
+          "title": "Postoperative Ileus vs. Mechanical Small Bowel Obstruction",
+          "content": "Distinguishing postoperative ileus (POI) from early mechanical small bowel obstruction (SBO) is a high-stakes clinical decision in the first 3–5 postoperative days. POI is universal following abdominal surgery, driven by surgical handling, opioid use, and neurogenic inhibition; it typically resolves within 3–5 days with return of flatus and bowel sounds. Early SBO — caused by adhesions, internal herniation through mesenteric defects, or port-site hernias — presents with colicky pain, dilated loops on CT with a transition point, and absent or high-pitched bowel sounds. CT with oral and IV contrast is the definitive diagnostic tool and should not be delayed if obstruction is suspected beyond POD 5. A mesenteric defect herniation (particularly after laparoscopic resection where the mesenteric window was not closed) can progress rapidly to strangulation — a closed-loop obstruction on CT mandates urgent operative intervention regardless of symptom duration."
+        },
+        {
+          "type": "callout",
+          "variant": "clinical",
+          "content": "After laparoscopic right hemicolectomy, always close the mesenteric defect to prevent internal herniation — a technically minor step that prevents a potentially catastrophic closed-loop obstruction. If a patient presents with postoperative SBO and CT shows a 'swirl sign' or mesenteric torsion, do not attempt prolonged conservative management. Time to OR is the determinant of bowel viability."
+        },
+        {
+          "type": "table",
+          "title": "Clavien-Dindo Grading of Postoperative Complications — Colorectal Surgery Context",
+          "headers": [
+            "Grade",
+            "Definition",
+            "Colorectal Example",
+            "Intervention Required"
+          ],
+          "rows": [
+            [
+              "I",
+              "Deviation from normal course, no pharmacological/procedural intervention",
+              "Wound seroma, mild ileus managed with NGT",
+              "Bedside wound care only"
+            ],
+            [
+              "II",
+              "Requires pharmacological treatment (not Grade I drugs)",
+              "SSI treated with antibiotics, DVT requiring anticoagulation, transfusion",
+              "Medications only"
+            ],
+            [
+              "IIIa",
+              "Requires procedural intervention without general anesthesia",
+              "CT-guided drainage of pelvic abscess (anastomotic leak Grade I-II)",
+              "Interventional radiology"
+            ],
+            [
+              "IIIb",
+              "Requires procedural intervention under general anesthesia",
+              "Return to OR for anastomotic leak, bleeding, or obstruction",
+              "General/regional anesthesia"
+            ],
+            [
+              "IVa",
+              "Single-organ life-threatening dysfunction; ICU management",
+              "Renal failure, respiratory failure post-sepsis",
+              "ICU, single organ support"
+            ],
+            [
+              "IVb",
+              "Multi-organ dysfunction",
+              "Septic shock with multi-organ failure after fecal peritonitis",
+              "ICU, multi-organ support"
+            ],
+            [
+              "V",
+              "Death",
+              "Fatal anastomotic leak with refractory septic shock",
+              "—"
+            ]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Enhanced Recovery After Surgery (ERAS): Evidence and Key Elements",
+          "content": "ERAS protocols in colorectal surgery are the highest-evidence perioperative management strategy available, with meta-analyses consistently demonstrating 30–50% reductions in length of stay and complication rates without increasing readmissions. The core elements with the strongest individual evidence include: carbohydrate loading up to 2 hours preoperatively (reduces insulin resistance and catabolism), avoidance of routine nasogastric tubes and surgical drains, multimodal opioid-sparing analgesia (NSAIDs, acetaminophen, regional blocks such as TAP or intrathecal morphine), early oral nutrition on POD 0–1, and early mobilization. Mechanical bowel preparation alone (without oral antibiotics) has been shown to increase rather than decrease SSI rates and is no longer recommended in ERAS-compliant pathways for elective colonic resection. The combination of oral antibiotics plus mechanical bowel prep does reduce SSI risk and is endorsed by ERAS Society guidelines for elective colon surgery."
+        },
+        {
+          "type": "text",
+          "title": "Adjuvant Chemotherapy Toxicity: Oxaliplatin Neuropathy and Capecitabine HFS",
+          "content": "Oxaliplatin-induced peripheral neuropathy (OIPN) is the primary dose-limiting toxicity of FOLFOX and CAPOX and the central rationale for the IDEA collaboration's 3-vs-6-month duration strategy. Acute cold-triggered dysesthesias affect nearly all patients and are manageable; cumulative sensory neuropathy (CTCAE Grade 2: interferes with function; Grade 3: disabling) occurs in approximately 30–40% of patients at 6 months and is often irreversible. Residents should counsel patients preoperatively and monitor with each cycle — dose reduction at Grade 2 persistent neuropathy is appropriate, not a sign of treatment failure. Capecitabine-associated hand-foot syndrome (HFS, palmar-plantar erythrodysesthesia) is managed with uridine triacetate, emollients, and dose modification; Grade 3 HFS (ulceration, inability to walk or use hands) requires treatment interruption. Dihydropyrimidine dehydrogenase (DPYD) genotyping prior to fluoropyrimidine initiation is recommended by CPIC guidelines to identify patients at risk for severe toxicity, including Grade 4 mucositis, diarrhea, or myelosuppression."
+        },
+        {
+          "type": "callout",
+          "variant": "pearl",
+          "content": "The IDEA collaboration's duration finding has a practical corollary for neuropathy prevention: a patient with T2N1M0 (low-risk Stage III) disease who receives 3 months of CAPOX rather than 6 months has equivalent oncologic outcomes but roughly half the cumulative oxaliplatin dose — translating directly to a dramatically lower risk of permanent disabling neuropathy. Choosing the right duration is itself a toxicity-reduction intervention."
+        },
+        {
+          "type": "key_points",
+          "title": "Key Points: Postoperative Complications and Adjuvant Toxicity",
+          "points": [
+            "Anastomotic leak incidence is strongly location-dependent: low rectal anastomoses (≤5–7 cm) carry 10–20% leak rates; suspect AL when fever, tachycardia, or elevated CRP persists beyond POD 3 and obtain CT with rectal contrast promptly.",
+            "Hinchey grade drives management: Grades I–II favor percutaneous drainage ± endoluminal vacuum; Grades III–IV mandate return to OR with stoma formation — delay converts a salvageable anastomosis into a Hartmann procedure.",
+            "Differentiate postoperative ileus (resolves by POD 3–5, no transition point) from mechanical SBO (transition point on CT, may indicate internal hernia) — mesenteric defect herniation post-laparoscopic resection is a surgical emergency if a closed loop is identified.",
+            "ERAS protocols reduce LOS by 30–50% and complications without increasing readmissions; key elements include carbohydrate loading, multimodal opioid-sparing analgesia, early feeding, and avoidance of routine drains and NGTs.",
+            "Oxaliplatin neuropathy is cumulative and potentially irreversible — Grade 2 persistent neuropathy warrants dose reduction, and the IDEA collaboration supports 3-month CAPOX for low-risk Stage III (T1-3N1) to limit cumulative exposure.",
+            "DPYD genotyping before fluoropyrimidine initiation identifies patients at risk for life-threatening toxicity; this is a patient safety standard, not an optional add-on."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "A2-S10",
+      "title": "Seguimiento, controversias y ensayos en curso",
+      "blocks": [
+        {
+          "type": "text",
+          "title": "Seguimiento, controversias y ensayos en curso",
+          "content": "La vigilancia estructurada tras la resección R0 del cáncer colorrectal en estadio III persigue dos objetivos distintos: detección precoz de recidiva resecable y seguimiento endoscópico para lesiones metacrónicas. Las guías NCCN (v2.2024) y ESMO recomiendan un esquema basado en CEA sérico, TC toracoabdominopélvica e historia clínica dirigida, con una intensidad que refleja el riesgo de recidiva más elevado durante los primeros tres años. La colonoscopia completa preoperatoria o diferida (si la obstrucción impidió la evaluación inicial) debe realizarse en el año uno; si es normal, se repite a los tres años y posteriormente cada cinco años. En pacientes con estadio III de alto riesgo (T4 o N2), algunos centros intensifican la frecuencia de TC en los dos primeros años, aunque la evidencia que sustenta este abordaje frente al estándar es heterogénea."
+        },
+        {
+          "type": "table",
+          "title": "Esquema de vigilancia recomendado en estadio III — NCCN/ESMO",
+          "headers": [
+            "Componente",
+            "Año 1–2",
+            "Año 3–5",
+            "Observaciones clave"
+          ],
+          "rows": [
+            [
+              "CEA sérico",
+              "Cada 3–6 meses",
+              "Cada 6 meses",
+              "Baseline preoperatorio esencial para interpretación; un valor aislado sin tendencia tiene escaso valor"
+            ],
+            [
+              "TC toracoabdominopélvica",
+              "Cada 6–12 meses",
+              "Anual",
+              "Mayor frecuencia (cada 6 m) justificable en alto riesgo (T4/N2); no hay beneficio demostrado de TC más frecuente en bajo riesgo"
+            ],
+            [
+              "Colonoscopia",
+              "Año 1 (o perioperatoria si no fue posible)",
+              "Año 3, luego cada 5 años",
+              "Adelantar si pólipos avanzados en la colonoscopia de año 1"
+            ],
+            [
+              "Evaluación clínica / anamnesis",
+              "Cada 3–6 meses",
+              "Cada 6 meses",
+              "Incluir evaluación de síntomas de neuropatía periférica post-FOLFOX/CAPOX"
+            ],
+            [
+              "PET-TC",
+              "No rutinaria",
+              "No rutinaria",
+              "Solo ante CEA elevado con TC negativa o indeterminada"
+            ]
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "content": "Un residente solicita PET-TC de rutina a los 12 meses en todos los pacientes con estadio III — esto es incorrecto y no está respaldado por guías. El PET-TC tiene un papel restringido a la evaluación de hallazgos indeterminados en TC o elevación de CEA sin foco identificado. Su uso rutinario genera falsos positivos que derivan en intervenciones innecesarias y exponen al paciente a radiación adicional sin beneficio clínico demostrado."
+        },
+        {
+          "type": "text",
+          "title": "Controversia: duración del tratamiento adyuvante y la colaboración IDEA",
+          "content": "La colaboración IDEA (International Duration Evaluation of Adjuvant Chemotherapy) estableció el marco actual para individualizar la duración del tratamiento adyuvante. En estadio III de bajo riesgo (T1-3 N1), tres meses de CAPOX son no inferiores a seis meses, con una reducción sustancial de la neuropatía periférica acumulativa — el determinante principal de morbilidad crónica con oxaliplatino. En cambio, en estadio III de alto riesgo (T4 o N2), la tendencia numérica favorece seis meses, y las guías NCCN/ESMO recomiendan individualizar hacia la duración completa cuando sea tolerable. La controversia residual recae en los pacientes MSI-H: algunos análisis de subgrupos sugieren que el beneficio absoluto del oxaliplatino puede ser menor en tumores dMMR, aunque el estándar actual no diferencia la duración por estatus molecular en guías vigentes."
+        },
+        {
+          "type": "callout",
+          "variant": "pearl",
+          "content": "La neuropatía periférica inducida por oxaliplatino no es simplemente un efecto secundario molesto — es permanente en un subconjunto relevante de pacientes. Al elegir entre 3 y 6 meses de terapia adyuvante en T1-3 N1, estás tomando una decisión sobre calidad de vida a largo plazo, no solo sobre conveniencia de dosificación. En este grupo de bajo riesgo, tres meses de CAPOX es oncológicamente equivalente y es la opción preferida por guías."
+        },
+        {
+          "type": "landmark_trial",
+          "name": "PROPHYLOCHIP-PRODIGE 15",
+          "citation": "PMID 32717180",
+          "population": "Pacientes con cáncer colorrectal considerados de alto riesgo para desarrollar metástasis peritoneales",
+          "intervention": "Cirugía de second-look + HIPEC profiláctica vs. vigilancia estándar",
+          "result": "El ensayo fase III no demostró beneficio significativo en supervivencia libre de enfermedad con la estrategia intervencionista frente a la vigilancia en pacientes de alto riesgo",
+          "practice_change": "La cirugía de second-look profiláctica con HIPEC no debe ofrecerse de forma estándar a pacientes en estadio III de alto riesgo fuera de ensayo clínico, independientemente del perfil de riesgo peritoneal."
+        },
+        {
+          "type": "text",
+          "title": "Controversia: ctDNA como guía para decisiones adyuvantes y ensayos en curso",
+          "content": "El DNA tumoral circulante (ctDNA) postoperatorio ha emergido como biomarcador de enfermedad residual mínima con potencial para estratificar el riesgo de recidiva más allá de la estadificación patológica convencional. La positividad de ctDNA a las 4–6 semanas de la cirugía identifica pacientes con riesgo muy elevado de recidiva, lo que ha llevado a diseñar ensayos que evalúan la escalada terapéutica en ctDNA-positivos y la desescalada (o supresión) en ctDNA-negativos. El ensayo DYNAMIC (Australia) y los ensayos COBRA y PEGASUS están explorando activamente estas preguntas en estadio II y III. Paralelamente, el sistema de soporte a decisiones clínicas basado en deep learning publicado en Lancet Oncology (PMID 35964620) integra marcadores de estadificación patológica para optimizar la selección de quimioterapia adyuvante, aunque la adopción clínica permanece no estándar a la espera de ensayos de intervención prospectivos. La convergencia de ctDNA y sistemas de inteligencia artificial representa la frontera actual más activa en la individualización del tratamiento adyuvante del cáncer colorrectal en estadio III."
+        },
+        {
+          "type": "callout",
+          "variant": "trial",
+          "content": "Lancet Oncology 2022 (PMID 35964620) — Un sistema de soporte a decisiones clínicas que integra deep learning con marcadores de estadificación patológica mostró capacidad para optimizar la selección de quimioterapia adyuvante en cáncer colorrectal tras resección primaria. Resultado: prometedor en el estudio de desarrollo y validación, pero sin datos de ensayo de intervención prospectivo. Estado actual: herramienta investigacional — no estándar de práctica clínica."
+        },
+        {
+          "type": "key_points",
+          "title": "Puntos clave — Seguimiento, controversias y ensayos en curso",
+          "points": [
+            "La vigilancia estándar en estadio III incluye CEA cada 3–6 meses (años 1–2), TC toracoabdominopélvica cada 6–12 meses y colonoscopia al año 1; el PET-TC no tiene papel rutinario.",
+            "IDEA collaboration: 3 meses de CAPOX son no inferiores a 6 meses en T1-3 N1 (bajo riesgo) con menor toxicidad neurológica; en T4/N2 (alto riesgo) se prefieren 6 meses.",
+            "PROPHYLOCHIP-PRODIGE 15 (PMID 32717180) demostró que la cirugía de second-look profiláctica + HIPEC no mejora la supervivencia libre de enfermedad — no debe ofrecerse fuera de ensayo clínico.",
+            "La inmunoterapia adyuvante (atezolizumab en ATOMIC; pembrolizumab en otros ensayos) para MSI-H/dMMR estadio III es biológicamente atractiva pero no está aprobada como estándar — aguardar datos de fase III maduros.",
+            "Los sistemas de IA para selección de quimioterapia adyuvante (Lancet Oncol 2022, PMID 35964620) son prometedores pero permanecen investigacionales sin validación prospectiva intervencionista.",
+            "El ctDNA postoperatorio (ensayos DYNAMIC, COBRA, PEGASUS) puede redefinir las indicaciones de tratamiento adyuvante, pero su uso para guiar decisiones fuera de ensayo clínico no está respaldado por guías actuales."
+          ]
+        }
+      ]
+    }
+  ],
+  "consolidation": {
+    "intro": "Test your understanding of Cáncer Colorrectal with 15 board-style clinical questions covering all sections of this chapter.",
+    "questions": [
+      {
+        "id": "A2-Q1",
+        "stem": "A 58-year-old woman undergoes right hemicolectomy for a T3N1M0 (Stage IIIB) colon adenocarcinoma. Final pathology reveals 14 lymph nodes examined, with 2 positive. Tumor testing returns MSI-H/dMMR. Her oncologist proposes adjuvant capecitabine monotherapy for 6 months to minimize toxicity. Which of the following best characterizes this treatment plan?",
+        "options": {
+          "A": "Appropriate — capecitabine monotherapy is the preferred adjuvant regimen for MSI-H Stage III colon cancer due to favorable toxicity profile",
+          "B": "Inappropriate — fluoropyrimidine monotherapy confers no benefit and may be harmful in MSI-H tumors; FOLFOX or CAPOX is the correct adjuvant standard",
+          "C": "Appropriate — MSI-H tumors are chemotherapy-resistant and adjuvant therapy should be omitted entirely",
+          "D": "Inappropriate — pembrolizumab should be substituted as adjuvant monotherapy per current NCCN guidelines"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "MSI-H/dMMR Stage III colon cancers do not benefit from fluoropyrimidine monotherapy (5-FU or capecitabine alone) and retrospective data suggest potential harm relative to observation. FOLFOX or CAPOX remains the adjuvant standard per NCCN/ESMO guidelines. Reducing toxicity by dropping oxaliplatin is not justified in this population.",
+          "wrong": {
+            "A": "Incorrect. Capecitabine monotherapy is explicitly contraindicated as the sole adjuvant agent in MSI-H/dMMR Stage III CRC. The favorable toxicity profile does not outweigh the lack of efficacy — and potential harm — in this molecular subgroup.",
+            "C": "Incorrect. MSI-H Stage III tumors are NOT chemotherapy-exempt. Oxaliplatin-based doublets (FOLFOX/CAPOX) retain guideline-endorsed benefit. The correct principle is avoidance of fluoropyrimidine monotherapy, not all chemotherapy.",
+            "D": "Incorrect. Adjuvant pembrolizumab for MSI-H Stage III CRC is investigational (ATOMIC trial ongoing) and is NOT currently guideline-endorsed by NCCN or ESMO as standard adjuvant therapy. Substituting immunotherapy for chemotherapy outside a trial is premature."
+          },
+          "guideline": "NCCN Guidelines Colon Cancer (current version): adjuvant fluoropyrimidine monotherapy should be avoided in MSI-H/dMMR Stage III disease; FOLFOX or CAPOX is recommended.",
+          "trial": null,
+          "pearl": "The MSI-H/dMMR prognostic advantage seen in Stage I–II disease does NOT translate into a license to de-escalate adjuvant therapy in Stage III — the prognostic benefit is attenuated and the predictive harm of fluoropyrimidine monotherapy persists."
+        },
+        "difficulty": 1
+      },
+      {
+        "id": "A2-Q2",
+        "stem": "A 65-year-old man undergoes elective sigmoid colectomy for a T2N1M0 (Stage IIIA) colon cancer. The operative report documents retrieval of 9 lymph nodes, 1 of which is positive. Which of the following statements best addresses the adequacy of the lymph node harvest?",
+        "options": {
+          "A": "The harvest is adequate; guidelines recommend a minimum of 6 lymph nodes for accurate staging of colon cancer",
+          "B": "The harvest is adequate; a single positive node confirms N1 disease regardless of total nodes retrieved",
+          "C": "The harvest is inadequate; a minimum of 12 lymph nodes must be examined to achieve accurate pathological staging per oncologic standards",
+          "D": "The harvest is inadequate; at least 20 lymph nodes are required in sigmoid resections due to the high lymphatic density of the sigmoid mesentery"
+        },
+        "correct": "C",
+        "explanation": {
+          "correct": "Adequate oncologic lymph node harvest requires examination of at least 12 lymph nodes per NCCN and ESMO guidelines. Retrieval of fewer than 12 nodes raises concern for understaging — a node-negative specimen with <12 nodes examined may actually harbor occult nodal disease. In this case, only 9 nodes were retrieved, which is below the accepted threshold.",
+          "wrong": {
+            "A": "Incorrect. Six lymph nodes is well below the accepted minimum of 12. This threshold is not supported by any major guideline.",
+            "B": "Incorrect. While the positive node confirms at least N1 disease, the total nodal harvest still matters for staging accuracy and quality metrics. Inadequate harvest may underestimate true nodal burden (e.g., missing additional positive nodes that would upstage to N2).",
+            "D": "Incorrect. A threshold of 20 nodes is not a guideline standard for any colonic segment. The uniform minimum across all colon resections is 12 lymph nodes."
+          },
+          "guideline": "NCCN Guidelines Colon Cancer / ESMO Colorectal Cancer Guidelines: minimum of 12 lymph nodes examined is required for adequate pathological staging of resected colon cancer.",
+          "trial": null,
+          "pearl": "When fewer than 12 lymph nodes are retrieved in a node-negative specimen, consider re-reviewing the gross specimen and fat-clearing techniques before signing out — understaging carries direct adjuvant therapy implications."
+        },
+        "difficulty": 1
+      },
+      {
+        "id": "A2-Q3",
+        "stem": "A 52-year-old woman with Stage III (T3N2M0) right-sided colon cancer completes R0 resection. Tumor testing shows MSI-H and BRAF V600E mutation. She asks about Lynch syndrome risk and hereditary counseling. Which of the following best reflects the appropriate interpretation and next step?",
+        "options": {
+          "A": "MSI-H status confirms Lynch syndrome; refer immediately for germline MLH1/MSH2 testing",
+          "B": "BRAF V600E co-mutation with MSI-H strongly favors sporadic epigenetic silencing (MLH1 promoter methylation); reflex MLH1 promoter methylation testing should be performed before germline referral",
+          "C": "BRAF V600E mutation excludes all further molecular workup; no Lynch syndrome evaluation is needed",
+          "D": "Both MSI-H and BRAF V600E are required to confirm Lynch syndrome; germline panel testing for all mismatch repair genes is the next step"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "The co-occurrence of MSI-H and BRAF V600E in a colorectal tumor — particularly in a right-sided, CIMP-high tumor — is the molecular signature of sporadic CRC driven by epigenetic silencing of MLH1 via promoter methylation, not germline Lynch syndrome. Reflexive MLH1 promoter methylation testing is the appropriate next step to stratify Lynch syndrome probability before initiating germline counseling, avoiding unnecessary burden on the patient and genetic counseling resources.",
+          "wrong": {
+            "A": "Incorrect. MSI-H alone does not confirm Lynch syndrome — approximately 80–85% of MSI-H CRCs are sporadic. Immediately referring for germline testing without first ruling out somatic MLH1 methylation is inefficient and clinically misleading.",
+            "C": "Incorrect. BRAF V600E makes Lynch syndrome less likely but does not eliminate the need for workup entirely. The correct pathway is to perform MLH1 promoter methylation testing; if methylation is absent, germline testing remains appropriate.",
+            "D": "Incorrect. MSI-H + BRAF V600E together is NOT a confirmatory combination for Lynch syndrome — it is the opposite. This pairing predicts sporadic etiology. Proceeding directly to germline panel testing without methylation testing skips a critical reflex step."
+          },
+          "guideline": "NCCN Guidelines Genetic/Familial High-Risk Assessment: Colorectal: MLH1 promoter methylation testing is recommended reflexively when MSI-H/MLH1-deficient tumors are identified, particularly when BRAF V600E co-mutation is present, to distinguish sporadic from heritable disease.",
+          "trial": null,
+          "pearl": "BRAF V600E is essentially incompatible with Lynch syndrome — germline MLH1 mutations produce a functional protein that BRAF V600E-driven CIMP silencing circumvents somatically. If you see MSI-H + BRAF V600E, think MLH1 methylation, not Lynch."
+        },
+        "difficulty": 2
+      },
+      {
+        "id": "A2-Q4",
+        "stem": "A 47-year-old man undergoes R0 resection for a T4bN1M0 (Stage IIIC) sigmoid colon cancer. He recovers uneventfully and is referred for adjuvant chemotherapy planning. His tumor is MSS/pMMR with wild-type BRAF. Based on the IDEA collaboration framework, which adjuvant chemotherapy duration strategy is most appropriate?",
+        "options": {
+          "A": "3 months of CAPOX — non-inferiority to 6 months has been demonstrated across all Stage III subgroups",
+          "B": "3 months of FOLFOX — this is the preferred regimen regardless of risk stratification due to lower cumulative neurotoxicity",
+          "C": "6 months of FOLFOX or CAPOX — T4 disease defines high-risk Stage III, favoring full-duration therapy",
+          "D": "6 months of FOLFOX only — CAPOX is not guideline-endorsed for high-risk Stage III colon cancer"
+        },
+        "correct": "C",
+        "explanation": {
+          "correct": "The IDEA collaboration established a risk-stratification framework for adjuvant chemotherapy duration in Stage III colon cancer. Low-risk Stage III (T1-3N1) supports 3-month CAPOX as non-inferior. High-risk Stage III — defined by T4 disease OR N2 disease — favors 6 months of therapy, as the non-inferiority margin for 3 months was not maintained in this subgroup. T4bN1 clearly falls into the high-risk category; 6 months of either FOLFOX or CAPOX is appropriate.",
+          "wrong": {
+            "A": "Incorrect. The IDEA collaboration demonstrated non-inferiority of 3 months for low-risk Stage III (T1-3N1) with CAPOX specifically, but NOT across all Stage III subgroups. High-risk Stage III (T4 or N2) did not meet non-inferiority criteria for 3-month duration.",
+            "B": "Incorrect. Duration reduction based on neurotoxicity concerns is not guideline-supported for high-risk Stage III. The IDEA framework does not endorse universal 3-month FOLFOX. Neurotoxicity sparing is the rationale for 3-month CAPOX in low-risk patients only.",
+            "D": "Incorrect. CAPOX is a guideline-endorsed option for high-risk Stage III adjuvant therapy. Both FOLFOX and CAPOX are acceptable per NCCN and ESMO. There is no guideline restriction of CAPOX to low-risk disease."
+          },
+          "guideline": "NCCN Guidelines Colon Cancer / ESMO Colorectal Cancer Guidelines (IDEA collaboration integration): 6 months of FOLFOX or CAPOX is preferred for high-risk Stage III (T4 or N2); 3 months of CAPOX is acceptable for low-risk Stage III (T1-3N1).",
+          "trial": null,
+          "pearl": "The IDEA risk split is T4 or N2 = high risk. Residents commonly misapply 3-month CAPOX to all Stage III patients — this is appropriate only for T1-3N1 disease and represents a significant clinical error in T4 or N2 patients."
+        },
+        "difficulty": 2
+      },
+      {
+        "id": "A2-Q5",
+        "stem": "A 60-year-old man underwent R0 resection for T3N2M0 (Stage IIIC) sigmoid colon cancer with synchronous ovarian implants resected (rendered free of gross disease). He completed 6 months of CAPOX adjuvant chemotherapy. Surveillance imaging at 12 months shows no evidence of recurrence. His surgical oncologist proposes enrollment in a protocol offering second-look laparotomy with HIPEC to prevent future peritoneal recurrence, citing high-risk features. The patient asks whether this approach has been proven to improve outcomes. Which of the following most accurately characterizes the evidence for prophylactic second-look surgery plus HIPEC in this setting?",
+        "options": {
+          "A": "Prophylactic second-look surgery plus HIPEC is supported by Phase III data and should be offered to all high-risk Stage III patients as standard of care",
+          "B": "Prophylactic second-look surgery plus HIPEC showed no significant disease-free survival benefit versus surveillance in a Phase III randomized trial and is not standard of care outside a clinical trial",
+          "C": "Prophylactic HIPEC has demonstrated benefit in ovarian cancer peritoneal metastasis models, and this benefit is directly applicable to high-risk colorectal cancer patients",
+          "D": "Second-look surgery without HIPEC is the guideline-endorsed surveillance strategy for high-risk Stage III colon cancer patients with prior peritoneal implants"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "The PROPHYLOCHIP-PRODIGE 15 trial (Lancet Oncology, 2020; PMID 32717180) was a Phase III randomized study evaluating second-look surgery plus HIPEC versus surveillance in patients at high risk of developing colorectal peritoneal metastases. The trial showed NO significant disease-free survival benefit for the interventional strategy. Prophylactic second-look surgery plus HIPEC therefore carries significant operative morbidity without demonstrated oncologic benefit and should not be offered outside a clinical trial.",
+          "wrong": {
+            "A": "Incorrect. The opposite is true. PROPHYLOCHIP-PRODIGE 15 (PMID 32717180) specifically tested this strategy in a Phase III design and failed to demonstrate a DFS benefit. Offering this as standard of care contradicts the highest level of available evidence.",
+            "C": "Incorrect. HIPEC data from ovarian cancer (a biologically distinct disease with different peritoneal biology, chemosensitivity profiles, and surgical cytoreduction paradigms) cannot be directly extrapolated to colorectal cancer peritoneal metastases. This cross-disease extrapolation is a recognized and dangerous clinical reasoning error.",
+            "D": "Incorrect. Second-look surgery without HIPEC is not a guideline-endorsed surveillance strategy for this population. Surveillance with imaging (CT chest/abdomen/pelvis) and CEA is standard. Routine operative second-look procedures are not guideline-supported."
+          },
+          "guideline": "NCCN Guidelines Colon Cancer: surveillance following curative resection does not include routine second-look surgery or HIPEC outside of clinical trial enrollment.",
+          "trial": "PROPHYLOCHIP-PRODIGE 15 (Lancet Oncology, 2020; PMID 32717180): Phase III RCT of second-look surgery plus HIPEC versus surveillance in high-risk patients for colorectal peritoneal metastases — no significant disease-free survival benefit was demonstrated for the interventional arm.",
+          "pearl": "When a Phase III trial is negative for a procedure with significant morbidity, the default position must be surveillance — the burden of proof for an invasive prophylactic intervention is not met by biological plausibility or extrapolated disease analogies."
+        },
+        "difficulty": 3
+      },
+      {
+        "id": "A2-Q6",
+        "stem": "A 58-year-old woman undergoes right hemicolectomy for a pT2N1M0 (Stage IIIA) colon adenocarcinoma. Final pathology reveals MSI-H/dMMR status. Her oncologist proposes capecitabine monotherapy for 6 months as adjuvant treatment because she has low-risk Stage III disease. Which of the following is the most appropriate response to this plan?",
+        "options": {
+          "A": "Approve the plan — capecitabine monotherapy is acceptable for low-risk MSI-H Stage III colon cancer",
+          "B": "Reject the plan — MSI-H/dMMR tumors do not benefit from fluoropyrimidine monotherapy and may be harmed; FOLFOX or CAPOX should be used instead",
+          "C": "Reject the plan — MSI-H Stage III colon cancer requires pembrolizumab-based immunotherapy as adjuvant standard of care",
+          "D": "Modify the plan — capecitabine monotherapy is acceptable, but duration should be reduced to 3 months given low-risk staging"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "MSI-H/dMMR colorectal tumors do not derive benefit from fluoropyrimidine monotherapy (5-FU or capecitabine alone) in the adjuvant setting — retrospective and subgroup data consistently show no benefit and potential harm compared to MSS tumors treated similarly. NCCN and ESMO guidelines explicitly state that adjuvant fluoropyrimidine monotherapy should be avoided in dMMR Stage III colon cancer. FOLFOX or CAPOX remain the recommended adjuvant backbone for these patients.",
+          "wrong": {
+            "A": "Incorrect. Capecitabine monotherapy is contraindicated as sole adjuvant therapy in MSI-H/dMMR Stage III colon cancer. The biological basis — loss of mismatch repair function — is associated with resistance to fluoropyrimidines, not benefit.",
+            "C": "Incorrect. While adjuvant immunotherapy (e.g., atezolizumab in the ATOMIC trial) is under active investigation for MSI-H Stage III CRC, it is NOT currently guideline-endorsed as standard of care. The ATOMIC trial data are still maturing.",
+            "D": "Incorrect. Reducing monotherapy duration does not correct the fundamental problem: fluoropyrimidine monotherapy is inappropriate regardless of duration in MSI-H/dMMR Stage III disease. The distractor conflates the IDEA collaboration duration guidance (which applies to oxaliplatin-based regimens) with monotherapy decisions."
+          },
+          "guideline": "NCCN Colon Cancer Guidelines (current version): adjuvant fluoropyrimidine monotherapy should NOT be used in dMMR/MSI-H Stage III colon cancer; FOLFOX or CAPOX is recommended.",
+          "trial": null,
+          "pearl": "MSI-H status is prognostically favorable in Stage I-II disease but does NOT eliminate the need for adjuvant chemotherapy in Stage III — it changes the AGENT selection (no monotherapy), not the decision to treat."
+        },
+        "difficulty": 1
+      },
+      {
+        "id": "A2-Q7",
+        "stem": "During a tumor board conference, a 62-year-old man with pT3N2M0 (Stage IIIC) sigmoid colon cancer is being discussed. Pathology confirms MSS status. The team is debating adjuvant chemotherapy duration. Which of the following represents the most evidence-aligned recommendation regarding treatment duration, based on the IDEA collaboration framework?",
+        "options": {
+          "A": "3 months of CAPOX is acceptable for this patient given equivalent efficacy to 6 months",
+          "B": "6 months of FOLFOX or CAPOX is preferred given N2 disease (high-risk Stage III)",
+          "C": "3 months of FOLFOX is preferred to minimize oxaliplatin-related neuropathy without sacrificing efficacy in all Stage III patients",
+          "D": "Adjuvant chemotherapy duration should be decided solely by patient tolerance, as no randomized data guide duration in Stage III CRC"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "The IDEA collaboration established that 3 months of CAPOX is non-inferior to 6 months for low-risk Stage III CRC (T1-3, N1). However, for HIGH-RISK Stage III disease — defined as T4 or N2 — 6 months of oxaliplatin-based therapy is preferred, as subgroup analyses showed attenuation of the non-inferiority signal. This patient has N2 disease, placing him firmly in the high-risk category where 6 months is favored.",
+          "wrong": {
+            "A": "Incorrect. The 3-month CAPOX non-inferiority data apply to LOW-RISK Stage III (T1-3N1). N2 disease is high-risk Stage III; applying the low-risk duration rule here is a dangerous oversimplification.",
+            "C": "Incorrect. While 3 months of FOLFOX reduces neuropathy, the IDEA collaboration showed that 3-month FOLFOX (unlike 3-month CAPOX) did NOT demonstrate non-inferiority even in low-risk patients. For high-risk patients, 3 months of either regimen is suboptimal.",
+            "D": "Incorrect. The IDEA collaboration — a pooled analysis of six international Phase III trials — specifically provides evidence-based duration guidance by risk stratification. Patient tolerance is a modifier, not the primary determinant."
+          },
+          "guideline": "NCCN Colon Cancer Guidelines and ESMO guidelines: 3 months CAPOX acceptable for low-risk Stage III (T1-3N1); 6 months preferred for high-risk Stage III (T4 or N2).",
+          "trial": "IDEA Collaboration (pooled analysis of 6 Phase III trials): established risk-stratified duration framework for adjuvant oxaliplatin-based therapy in Stage III colon cancer.",
+          "pearl": "The IDEA framework applies to COLON cancer adjuvant decisions. For rectal cancer, adjuvant chemotherapy duration is less clearly defined and often governed by neoadjuvant treatment received — do not conflate the two."
+        },
+        "difficulty": 1
+      },
+      {
+        "id": "A2-Q8",
+        "stem": "A 49-year-old woman is found to have a right-sided pT4aN1M0 (Stage IIIB) colon adenocarcinoma. Tumor molecular testing reveals MSI-H/dMMR AND BRAF V600E mutation. Germline Lynch syndrome testing is being considered. Which of the following best characterizes the appropriate next step in molecular workup and Lynch syndrome risk interpretation?",
+        "options": {
+          "A": "The combination of MSI-H and BRAF V600E confirms Lynch syndrome; germline MLH1 testing should be expedited",
+          "B": "BRAF V600E in an MSI-H tumor strongly suggests sporadic epigenetic silencing via MLH1 promoter methylation; reflex MLH1 promoter methylation testing should be performed before concluding Lynch syndrome",
+          "C": "BRAF V600E mutation in MSI-H tumors excludes Lynch syndrome entirely; no germline testing is warranted",
+          "D": "BRAF V600E and MSI-H are mutually exclusive findings; the molecular report should be repeated to confirm accuracy"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "BRAF V600E co-occurs in approximately 5-10% of MSI-H CRC. When both are present — particularly in right-sided, CIMP-high tumors — this pattern is highly characteristic of SPORADIC MSI-H CRC caused by epigenetic MLH1 promoter hypermethylation, NOT Lynch syndrome (which is a germline mismatch repair gene mutation). Reflex MLH1 promoter methylation testing is recommended as the next step: if methylation is confirmed, sporadic mechanism is established and the urgency/probability of Lynch syndrome is substantially reduced, avoiding unnecessary germline counseling burden.",
+          "wrong": {
+            "A": "Incorrect. BRAF V600E actually argues AGAINST Lynch syndrome, not for it. Lynch syndrome is caused by germline MMR mutations and is not associated with BRAF V600E. This answer reverses the clinical logic.",
+            "C": "Incorrect. BRAF V600E substantially reduces (but does not absolutely exclude) the probability of Lynch syndrome. A small number of BRAF V600E MSI-H CRCs may still warrant germline evaluation, particularly if methylation testing is negative or family history is compelling. Blanket exclusion without methylation testing is inappropriate.",
+            "D": "Incorrect. BRAF V600E and MSI-H are NOT mutually exclusive — they co-occur in approximately 5-10% of MSI-H CRC cases. This represents a common misconception among trainees."
+          },
+          "guideline": "NCCN Colon Cancer Guidelines: MSI-H tumors with BRAF V600E should undergo reflex MLH1 promoter methylation testing. If methylation is confirmed, sporadic CRC is the most likely mechanism and germline Lynch syndrome testing yield is substantially lower.",
+          "trial": null,
+          "pearl": "Lynch syndrome germline testing should still be reflexively OFFERED to all patients with dMMR/MSI-H CRC — but the BRAF V600E + MLH1 methylation pathway allows you to triage likelihood and counsel patients appropriately before or instead of germline testing."
+        },
+        "difficulty": 2
+      },
+      {
+        "id": "A2-Q9",
+        "stem": "A 55-year-old man underwent R0 right hemicolectomy 8 months ago for pT3N2M0 (Stage IIIC) MSS colon cancer and completed 6 months of FOLFOX. During routine surveillance imaging, a CT scan shows no evidence of metastatic disease. His surgeon recalls a Phase III trial (PROPHYLOCHIP-PRODIGE 15) and considers whether second-look surgery plus HIPEC should be offered given his high-risk Stage IIIC presentation. What is the most appropriate recommendation?",
+        "options": {
+          "A": "Offer second-look surgery plus HIPEC — PROPHYLOCHIP-PRODIGE 15 demonstrated a significant disease-free survival benefit in high-risk Stage III patients",
+          "B": "Do not offer second-look surgery plus HIPEC outside a clinical trial — PROPHYLOCHIP-PRODIGE 15 showed no significant disease-free survival benefit for the interventional strategy",
+          "C": "Offer second-look surgery alone (without HIPEC) — the trial data support surgical exploration but not the addition of intraperitoneal chemotherapy",
+          "D": "Defer the decision to medical oncology, as PROPHYLOCHIP-PRODIGE 15 only evaluated systemic chemotherapy regimens"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "PROPHYLOCHIP-PRODIGE 15 (Lancet Oncology, 2020; PMID 32717180) was a randomized Phase III trial evaluating second-look surgery plus HIPEC versus surveillance in patients at high risk of developing colorectal peritoneal metastases. The trial showed NO significant disease-free survival benefit for the interventional strategy compared to surveillance alone. Therefore, prophylactic second-look surgery plus HIPEC should NOT be offered to high-risk Stage III patients outside a clinical trial, as it adds significant morbidity without demonstrated oncologic benefit.",
+          "wrong": {
+            "A": "Incorrect. This directly contradicts the Phase III trial result. PROPHYLOCHIP-PRODIGE 15 did NOT demonstrate a significant DFS benefit. Offering this intervention based on a false premise of benefit would expose patients to unnecessary surgical risk.",
+            "C": "Incorrect. The trial evaluated the combined intervention (surgery + HIPEC), not surgery alone. There is no evidence base supporting second-look surgery alone in this context, and this option misrepresents the trial's design and findings.",
+            "D": "Incorrect. PROPHYLOCHIP-PRODIGE 15 specifically evaluated second-look surgery plus HIPEC (an interventional surgical strategy), not systemic chemotherapy regimens. This answer reflects a fundamental mischaracterization of the trial."
+          },
+          "guideline": null,
+          "trial": "PROPHYLOCHIP-PRODIGE 15 (Phase III, Lancet Oncol, 2020; PMID 32717180): Second-look surgery plus HIPEC vs. surveillance in high-risk patients for colorectal peritoneal metastases — no significant disease-free survival benefit was demonstrated for the interventional strategy.",
+          "pearl": "High operative risk from second-look surgery plus HIPEC (major morbidity, mortality risk) combined with a negative Phase III trial makes this intervention unjustifiable outside the clinical trial setting — the burden of proof rests on demonstrating benefit before adopting prophylactic surgical strategies."
+        },
+        "difficulty": 2
+      },
+      {
+        "id": "A2-Q10",
+        "stem": "A colorectal surgery research group presents a deep learning-based clinical decision support system at grand rounds, citing a 2022 Lancet Oncology development and validation study (PMID 35964620) that integrates pathological staging markers to optimize adjuvant chemotherapy decisions in CRC. A junior resident asks whether this tool should be incorporated into routine adjuvant chemotherapy decision-making for Stage III colon cancer patients at your institution. Which of the following is the most accurate and evidence-aligned response?",
+        "options": {
+          "A": "Yes — the Lancet Oncology validation study constitutes sufficient evidence to adopt this tool as a standard adjuvant decision-support instrument immediately",
+          "B": "No — the tool has shown promise in development and validation cohorts, but prospective interventional trials demonstrating clinical benefit are lacking; adoption remains investigational and non-standard",
+          "C": "Yes — NCCN guidelines currently endorse AI-based decision support systems as co-primary tools for adjuvant chemotherapy selection in Stage III CRC",
+          "D": "No — deep learning tools are inherently unreliable in oncology applications and should never be considered for clinical decision-making in any capacity"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "The 2022 Lancet Oncology study (PMID 35964620) represents a development and validation study of an AI/deep learning clinical decision support system for adjuvant chemotherapy optimization in CRC. While methodologically rigorous for a development study, validation cohort performance does not substitute for prospective interventional trial data demonstrating improved patient outcomes when the tool is deployed in clinical practice. The translation from 'this tool predicts well' to 'using this tool improves survival or reduces overtreatment' requires prospective interventional evidence that is currently lacking. Clinical adoption remains controversial and non-standard.",
+          "wrong": {
+            "A": "Incorrect. Development and validation studies — regardless of journal prestige — establish model performance metrics, not clinical benefit. The critical next step is a prospective trial where the tool is actually used to guide decisions and outcomes are measured. Equating validation with implementation readiness is a common and consequential reasoning error.",
+            "C": "Incorrect. No current NCCN version endorses AI-based deep learning decision support systems as standard co-primary tools for adjuvant chemotherapy selection in Stage III CRC. This answer fabricates a guideline endorsement that does not exist.",
+            "D": "Incorrect. This represents an overcorrection. Deep learning tools have demonstrated meaningful performance in multiple oncology contexts and are appropriate subjects of prospective research. The correct objection is the absence of prospective interventional data, not inherent unreliability of the methodology."
+          },
+          "guideline": "NCCN Colon Cancer Guidelines (current): Adjuvant chemotherapy decisions are guided by clinical staging, molecular markers (MMR status), and patient factors — AI-based decision support tools are not currently endorsed as standard instruments.",
+          "trial": "PMID 35964620 (Lancet Oncol, 2022): Deep learning-based clinical decision support system integrating pathological staging markers for adjuvant chemotherapy optimization in CRC — development and validation study showing promise, but prospective interventional data are lacking.",
+          "pearl": "The hierarchy of evidence matters critically: development/validation study → prospective interventional trial → guideline endorsement. A tool that 'works' in a validation cohort has not yet been shown to 'help patients' when deployed — a distinction that defines the difference between research and standard of care."
+        },
+        "difficulty": 3
+      },
+      {
+        "id": "A2-Q11",
+        "stem": "A 58-year-old woman undergoes right hemicolectomy for a pT3N1M0 (Stage IIIB) colon adenocarcinoma. Pathology reveals MSI-H/dMMR status. Her oncologist considers adjuvant chemotherapy. Which of the following adjuvant regimens is most appropriate?",
+        "options": {
+          "A": "Capecitabine monotherapy for 6 months",
+          "B": "5-FU/leucovorin monotherapy for 6 months",
+          "C": "FOLFOX for 3–6 months",
+          "D": "Observation, as MSI-H Stage III tumors derive no benefit from any chemotherapy"
+        },
+        "correct": "C",
+        "explanation": {
+          "correct": "FOLFOX (or CAPOX) remains the standard adjuvant regimen for MSI-H/dMMR Stage III colon cancer per NCCN and ESMO guidelines. Although fluoropyrimidine monotherapy is contraindicated in this setting, oxaliplatin-based doublet therapy is still recommended and provides the adjuvant benefit seen in Stage III disease broadly.",
+          "wrong": {
+            "A": "Capecitabine monotherapy is a fluoropyrimidine and should be avoided as sole adjuvant therapy in MSI-H/dMMR CRC — these tumors do not benefit and retrospective data suggest potential harm from fluoropyrimidine monotherapy alone.",
+            "B": "5-FU/leucovorin monotherapy carries the same contraindication as capecitabine in MSI-H disease; monotherapy fluoropyrimidine is not standard and is specifically flagged as potentially harmful in this molecular subtype.",
+            "D": "Observation alone is inappropriate for Stage III (node-positive) disease regardless of MSI status. While MSI-H confers a favorable prognosis in early-stage disease, N1 involvement mandates adjuvant treatment. The current guideline standard is FOLFOX/CAPOX."
+          },
+          "guideline": "NCCN Guidelines Colon Cancer v2.2024: MSI-H/dMMR Stage III — fluoropyrimidine monotherapy is not recommended; FOLFOX or CAPOX is standard adjuvant therapy.",
+          "trial": null,
+          "pearl": "MSI-H status is both prognostic (favorable) and predictive (fluoropyrimidine monotherapy ineffective) — these roles are distinct. A resident who conflates them may incorrectly withhold or select the wrong adjuvant regimen."
+        },
+        "difficulty": 1
+      },
+      {
+        "id": "A2-Q12",
+        "stem": "A 63-year-old man is found to have a pT2N1M0 colon cancer (Stage IIIA) after right hemicolectomy. The surgical pathology report documents 9 lymph nodes retrieved. Which of the following is the most appropriate next step regarding surgical adequacy?",
+        "options": {
+          "A": "Proceed to adjuvant FOLFOX; nodal harvest is sufficient for staging purposes",
+          "B": "Re-discuss with the pathologist to resubmit tissue blocks for additional nodal sampling, as ≥12 nodes are required for adequate staging",
+          "C": "Perform immediate re-exploration and extended lymphadenectomy",
+          "D": "Classify as Stage II and omit adjuvant chemotherapy given the low nodal yield"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "Adequate oncologic lymph node harvest requires ≥12 nodes per NCCN/ESMO guidelines and AJCC 8th edition staging criteria. With only 9 nodes retrieved, the specimen should be resubmitted for additional fat clearing and re-examination before finalizing staging. This is the appropriate quality-of-care intervention prior to committing to an adjuvant plan.",
+          "wrong": {
+            "A": "Proceeding without addressing inadequate nodal harvest risks understaging — a patient with occult N2 disease may be undertreated. Nodal yield ≥12 is a quality metric and staging requirement, not merely a preference.",
+            "C": "Immediate re-exploration for lymphadenectomy is not standard practice and carries unnecessary operative risk. The correct intervention is pathologic re-examination of the existing specimen.",
+            "D": "Downclassifying to Stage II based on an inadequate nodal harvest is incorrect — you cannot presume node-negativity from an insufficient sample. This is a dangerous reasoning error that could lead to omission of beneficial adjuvant therapy."
+          },
+          "guideline": "NCCN Guidelines Colon Cancer v2.2024 and AJCC 8th Edition: minimum of 12 lymph nodes required for adequate pathologic staging of colon cancer.",
+          "trial": null,
+          "pearl": "If <12 nodes are retrieved, pathologic resubmission with fat-clearing techniques often yields additional nodes. In practice, a low nodal count should prompt a conversation with pathology before the staging is finalized — never simply accept an inadequate specimen."
+        },
+        "difficulty": 1
+      },
+      {
+        "id": "A2-Q13",
+        "stem": "A 55-year-old man with a pT4N2M0 (Stage IIIC) colon cancer completes R0 resection. Tumor molecular profiling reveals MSS, KRAS wild-type, BRAF wild-type, and HER2 non-amplified. When counseling him on adjuvant chemotherapy duration, which of the following is most consistent with current evidence-based practice?",
+        "options": {
+          "A": "3 months of CAPOX is non-inferior to 6 months and should be offered to reduce cumulative oxaliplatin toxicity",
+          "B": "6 months of FOLFOX or CAPOX is preferred given high-risk Stage III features (T4 and N2)",
+          "C": "3 months of FOLFOX is acceptable because all Stage III patients are equivalent in risk",
+          "D": "Adjuvant chemotherapy duration does not affect peripheral neuropathy rates and should default to 6 months universally"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "The IDEA collaboration established that treatment duration should be risk-stratified: low-risk Stage III (T1-3N1) can receive 3 months of CAPOX with non-inferior outcomes, but high-risk Stage III (T4 or N2 disease) should receive 6 months of oxaliplatin-based therapy given inferior outcomes with abbreviated treatment in this subgroup. This patient has both T4 and N2 features — high-risk by either criterion — making 6 months the preferred approach.",
+          "wrong": {
+            "A": "The 3-month CAPOX non-inferiority finding from the IDEA collaboration applies specifically to low-risk Stage III (T1-3N1). It does not apply to T4 or N2 disease. Applying this shortcut to high-risk patients risks undertreating them.",
+            "C": "Not all Stage III patients are risk-equivalent. The IDEA collaboration specifically subdivided Stage III into low-risk (T1-3N1) and high-risk (T4 or N2) — treating them identically is an oversimplification that contradicts the evidence.",
+            "D": "Duration directly impacts cumulative oxaliplatin exposure and peripheral neuropathy rates — this is a primary reason the IDEA collaboration explored shortened therapy. However, in high-risk disease, the efficacy benefit of 6 months outweighs the neuropathy reduction argument for abbreviation."
+          },
+          "guideline": "NCCN Guidelines Colon Cancer v2.2024: For high-risk Stage III (T4 or N2), 6 months of adjuvant FOLFOX or CAPOX is recommended. The IDEA collaboration informs duration selection by risk stratum.",
+          "trial": null,
+          "pearl": "The IDEA collaboration's most clinically actionable rule: CAPOX × 3 months saves neuropathy in T1-3N1 patients without sacrificing efficacy. But resist the temptation to shorten therapy in T4/N2 disease — the subgroup analyses consistently favor 6 months in that population."
+        },
+        "difficulty": 2
+      },
+      {
+        "id": "A2-Q14",
+        "stem": "A 47-year-old woman undergoes right hemicolectomy for a pT3N1M0 colon cancer. IHC shows loss of MLH1 and PMS2 expression. Reflexive BRAF V600E testing returns positive. She has no family history of CRC, endometrial, or other Lynch-associated cancers. What is the most appropriate next step in molecular workup?",
+        "options": {
+          "A": "Refer directly to genetic counseling for germline Lynch syndrome testing given MLH1/PMS2 loss",
+          "B": "Order MLH1 promoter methylation testing to distinguish sporadic epigenetic silencing from germline Lynch syndrome",
+          "C": "No further molecular workup is needed; treat with FOLFOX and proceed",
+          "D": "Order germline BRAF testing to evaluate for hereditary BRAF V600E syndrome"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "The co-occurrence of MSI-H/dMMR (MLH1/PMS2 loss) with BRAF V600E mutation is a highly specific signature of sporadic CRC arising from MLH1 promoter hypermethylation (CIMP-high pathway), not Lynch syndrome. MLH1 methylation testing is the appropriate reflex test to confirm sporadic epigenetic silencing and avoid unnecessary germline counseling. Lynch syndrome caused by germline MLH1 mutation is almost never associated with BRAF V600E.",
+          "wrong": {
+            "A": "Reflexive germline Lynch syndrome referral is appropriate for MLH1/PMS2 loss WITHOUT BRAF V600E. The presence of BRAF V600E substantially shifts the pre-test probability toward sporadic disease — skipping the MLH1 methylation step leads to unnecessary patient anxiety and resource utilization.",
+            "C": "Proceeding without completing the molecular workup is inadequate. While FOLFOX is the correct adjuvant choice, failing to complete the MLH1 methylation reflex test leaves the germline risk question unanswered, which has implications for the patient's family members and future cancer surveillance.",
+            "D": "There is no established hereditary BRAF V600E germline syndrome analogous to Lynch syndrome. Germline BRAF testing is not a standard clinical reflex step in this scenario and would not clarify the Lynch syndrome question."
+          },
+          "guideline": "NCCN Guidelines Colon Cancer v2.2024: For tumors with MLH1/PMS2 loss, reflex BRAF V600E testing followed by MLH1 promoter methylation testing is recommended to distinguish sporadic from germline (Lynch) etiologies before germline referral.",
+          "trial": null,
+          "pearl": "BRAF V600E + MSI-H is a near-pathognomonic signature of sporadic CRC via the serrated/CIMP pathway. In practice, every resident should know this algorithm cold: MLH1 loss → BRAF V600E → if positive → MLH1 methylation → if methylated → sporadic, not Lynch. Skipping steps wastes resources and distresses patients unnecessarily."
+        },
+        "difficulty": 2
+      },
+      {
+        "id": "A2-Q15",
+        "stem": "A 52-year-old man with pT3N1M0 MSS colon cancer underwent R0 resection 8 months ago and completed 6 months of adjuvant FOLFOX. Surveillance CT now reveals a new 2.2 cm omental nodule and subtle peritoneal thickening. His surgeon notes that, given his high-risk Stage III primary, he should have undergone prophylactic second-look surgery plus HIPEC at 6 months post-resection to prevent this outcome. Which of the following best characterizes the evidence underlying this statement?",
+        "options": {
+          "A": "The statement is correct; prophylactic second-look surgery plus HIPEC improves disease-free survival in high-risk Stage III patients per Phase III data",
+          "B": "The statement is incorrect; PROPHYLOCHIP-PRODIGE 15 demonstrated no significant disease-free survival benefit for prophylactic second-look surgery plus HIPEC in high-risk Stage III patients",
+          "C": "The statement is correct for patients with right-sided tumors, where peritoneal recurrence risk is highest, though data are limited to Phase II evidence",
+          "D": "The statement is incorrect because HIPEC is only validated for ovarian cancer peritoneal metastases, and no data exist for CRC peritoneal disease"
+        },
+        "correct": "B",
+        "explanation": {
+          "correct": "PROPHYLOCHIP-PRODIGE 15 (Lancet Oncology, 2020; PMID 32717180) was a randomized Phase III trial evaluating prophylactic second-look surgery plus HIPEC versus surveillance in patients at high risk of developing colorectal peritoneal metastases. The trial demonstrated no significant disease-free survival benefit for the interventional strategy. Prophylactic second-look surgery plus HIPEC therefore has no role outside of a clinical trial, regardless of the patient's peritoneal recurrence risk profile.",
+          "wrong": {
+            "A": "This directly contradicts the Phase III PROPHYLOCHIP-PRODIGE 15 results. The trial found no DFS benefit, and the added operative morbidity of a second-look laparotomy plus HIPEC without demonstrated efficacy makes this approach unjustifiable as standard care.",
+            "C": "There is no approved subgroup of high-risk Stage III patients — including right-sided tumors — for whom prophylactic second-look surgery plus HIPEC is standard. PROPHYLOCHIP-PRODIGE 15 was not restricted to left-sided primaries, and its negative result applies broadly. Citing Phase II data to justify a Phase III-negative intervention is a methodologically flawed argument.",
+            "D": "This overstates the limitation. HIPEC does have studied applications in CRC peritoneal metastases (not just ovarian cancer), as covered in the JAMA Oncology review (PMID 33956063). However, the critical distinction is therapeutic HIPEC for established peritoneal metastases versus prophylactic HIPEC — the latter lacks Phase III support in CRC. Conflating the two represents a common but dangerous reasoning error."
+          },
+          "guideline": null,
+          "trial": "PROPHYLOCHIP-PRODIGE 15 (Lancet Oncology, 2020; PMID 32717180): Randomized Phase III trial of prophylactic second-look surgery plus HIPEC versus surveillance in patients at high risk for colorectal peritoneal metastases — no significant disease-free survival benefit was demonstrated for the interventional arm.",
+          "pearl": "A Phase III negative trial is definitive until superseded. Surgeons who cite biologic plausibility or single-arm Phase II data to justify prophylactic HIPEC are inverting the evidence hierarchy. The correct answer to 'should we do prophylactic HIPEC?' after PROPHYLOCHIP-PRODIGE 15 is: only within a clinical trial."
+        },
+        "difficulty": 3
+      }
+    ]
+  }
+}
