@@ -12,7 +12,7 @@ const CURRICULUM = [
     chapters: [
       { id: 'A1', title: 'Principles of Surgical Oncology', level: 'PGY1-2', readingTime: 40 },
       { id: 'A2', title: 'Colorectal Cancer', level: 'PGY2-3', readingTime: 45 },
-      { id: 'A2ES', title: 'Cáncer Colorrectal (ES — pipeline test)', level: 'PGY2-3', readingTime: 39 },
+      { id: 'A2ES', title: 'Colorectal Cancer (Pipeline v1)', level: 'PGY2-3', readingTime: 37 },
       { id: 'A3', title: 'Gastric Cancer', level: 'PGY2-3', readingTime: 38 },
       { id: 'A4', title: 'Hepatopancreatic-Biliary Surgery', level: 'PGY3-4', readingTime: 50 },
       { id: 'A5', title: 'Breast Surgery & Melanoma', level: 'PGY2-3', readingTime: 95 },
